@@ -4,6 +4,28 @@
   font-family: Epilogue , sans-serif;
 }
 
-header {
+.header-container {
   background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-name {
+  margin-top: 0px;
+  padding: 20px;
+}
+
+.subtitle-who {
+  padding: 20px;
+}
+
+.text-aboutme {
+  text-align: justify;
+  padding: 20px;
+  width: 500px;
+}
+
+.joana-picture {
+  width: 400px;
+  border-radius: 50%;
 }
