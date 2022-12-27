@@ -1,11 +1,8 @@
-import './App.css';
-import AboutMe from './pages/AboutMe';
+import Routes from './Routes';
 
 function App() {
   return (
-    <div className="App">
-      <AboutMe />
-    </div>
+    <Routes />
   );
 }
 
