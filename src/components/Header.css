@@ -1,0 +1,13 @@
+.header-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn-group {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.btn-group:hover {
+  color: gray;
+}
