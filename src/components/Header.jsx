@@ -1,10 +1,16 @@
-import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import { FaHome } from 'react-icons/fa';
 
 function Header() {
   return (
-    <header>
-      <p>Header</p>
-    </header>
+    <Navbar bg="light">
+      <Container>
+        <Navbar.Brand href="/">
+          <FaHome />
+        </Navbar.Brand>
+      </Container>
+    </Navbar>
   );
 }
 
