@@ -1,2 +1,1 @@
-# README EM CONSTRUÇÃO
-a
+# :construction: PORTFÓLIO EM CONSTRUÇÃO :construction:
