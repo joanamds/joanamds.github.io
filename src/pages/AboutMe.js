@@ -4,7 +4,7 @@ import joana from '../images/joana-photo.jpeg';
 
 function AboutMe() {
   return (
-    <header className="header-container">
+    <div className="about-container">
       <div className="info-aboutme">
       <h1 className="title-name">Joana Maria dos Santos, 25 anos</h1>
       <h3 className="subtitle-who">Quem é a Joana?</h3>
@@ -16,7 +16,7 @@ function AboutMe() {
       <div className="my-picture">
         <img src={ joana } alt="imagem da Joana" className="joana-picture"/>
       </div>
-    </header>
+    </div>
   );
 }
 

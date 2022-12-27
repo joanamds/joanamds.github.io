@@ -4,10 +4,17 @@
   font-family: Epilogue , sans-serif;
 }
 
-.header-container {
-  background-color: red;
+.about-container {
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
   display: flex;
   justify-content: space-between;
+  padding: 50px;
+  width: 1000px;
 }
 
 .title-name {
@@ -28,4 +35,8 @@
 .joana-picture {
   width: 400px;
   border-radius: 50%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
