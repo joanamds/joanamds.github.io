@@ -1,8 +1,12 @@
 import React from 'react';
+import Header from '../components/Header';
 
 function Tools() {
   return (
-    <h1>Tools</h1>
+    <div className="tools-page">
+      <Header />
+      <h1>Tools</h1>
+    </div>
   );
 }
 

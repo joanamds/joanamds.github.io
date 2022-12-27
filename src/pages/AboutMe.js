@@ -1,9 +1,12 @@
 import React from 'react';
 import './AboutMe.css';
 import joana from '../images/joana-photo.jpeg';
+import Header from '../components/Header';
 
 function AboutMe() {
   return (
+    <div className="aboutme-page">
+    <Header />
     <div className="about-container">
       <div className="info-aboutme">
       <h1 className="title-name">Joana Maria dos Santos, 25 anos</h1>
@@ -15,6 +18,7 @@ function AboutMe() {
       </div>
       <div className="my-picture">
         <img src={ joana } alt="imagem da Joana" className="joana-picture"/>
+      </div>
       </div>
     </div>
   );
