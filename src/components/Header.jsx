@@ -43,8 +43,8 @@ function Header() {
           className="theme"
           onClick={ toggleTheme }
         >
-          {isDarkTheme && <BsSunFill style={ { color: 'white' } } />}
-        {!isDarkTheme && <BsMoonFill />}
+          {isDarkTheme && <BsSunFill style={ { color: 'yellow' } } />}
+          {!isDarkTheme && <BsMoonFill style={ { color: 'blue'}} />}
         </ButtonGroup>
       </Container>
       </Navbar>

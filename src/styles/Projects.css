@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap') ;
+
+.App__Dark .projects-page h1 {
+  font-family: 'Gochi Hand', cursive;
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+.App__Light .projects-page h1 {
+  font-family: 'Gochi Hand', cursive;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.App__Light .carousel-container {
+  margin: auto;
+  margin-top: 50px;
+  background-color: whitesmoke;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+  width: 1000px;
+}
+
+.App__Dark .carousel-container {
+  margin: auto;
+  margin-top: 50px;
+  background-color: #181818;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+  width: 1000px;
+}
+
+.buttons-card {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.App__Dark .card {
+  background-color: black;
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.App__Dark .card-title {
+  color: whitesmoke;
+}
+
+.App__Dark .card-text {
+  color: whitesmoke;
+}
+
+.projects-page button {
+  background-color: #5630ad;
+  border-color: #5630ad;
+}
+
+.projects-page button:hover {
+  background-color: gray;
+}
