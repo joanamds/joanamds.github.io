@@ -14,9 +14,11 @@ function Projects() {
   return (
     <div className="projects-page">
       <Header />
+      <h1>Projetos</h1>
       <div className="carousel-container">
-        <Carousel slide={false} variant={ isDarkTheme? 'light' : 'dark'}>
+        <Carousel slide={false} variant={isDarkTheme ? 'light' : 'dark'}>
           {projects.map((project, index) => (
+          <Carousel.Item>
             <ProjectCard
               key={index}
               projectName={project.title}
@@ -25,6 +27,7 @@ function Projects() {
               projectRepo={project.repo}
               projectDescription={project.description}
             />
+          </Carousel.Item>
           ))}
         </Carousel>
       </div>
