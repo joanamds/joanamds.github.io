@@ -34,7 +34,7 @@ function Header() {
           <FaHome />
         </ButtonGroup>
         <Navbar.Brand>
-          Portfólio de Joana Maria dos Santos
+          Portfólio
         </Navbar.Brand>
         <ButtonGroup onClick={() => history.push('/contact')}>
           <FaPhone />
