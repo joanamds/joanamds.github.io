@@ -4,7 +4,14 @@
   font-family: Epilogue , sans-serif;
 }
 
-.about-container {
+.App__Dark {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App__Light .about-container {
   margin: auto;
   margin-top: 50px;
   text-align: center;
@@ -17,22 +24,62 @@
   width: 1000px;
 }
 
-.title-name {
+.App__Dark .about-container {
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  background-color: #181818;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);  
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  width: 1000px;
+}
+
+.App__Dark .title-name {
+  margin-top: 0px;
+  padding: 20px;
+  color: whitesmoke
+}
+
+.App__Light .title-name {
   margin-top: 0px;
   padding: 20px;
 }
 
-.subtitle-who {
+.App__Light .subtitle-who {
   padding: 20px;
 }
 
-.text-aboutme {
+.App__Dark .subtitle-who {
+  padding: 20px;
+  color: whitesmoke;
+}
+
+.App__Dark .text-aboutme {
+  text-align: justify;
+  padding: 20px;
+  width: 500px;
+  color: whitesmoke;
+}
+
+.App__Light .text-aboutme {
   text-align: justify;
   padding: 20px;
   width: 500px;
 }
 
-.joana-picture {
+.App__Dark .joana-picture {
+  width: 400px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 10px;
+  border-color: black;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+.App__Light .joana-picture {
   width: 400px;
   border-radius: 50%;
   border-style: solid;

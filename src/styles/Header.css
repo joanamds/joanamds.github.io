@@ -1,13 +1,18 @@
-.header-container {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.btn-group {
+.App__Light .btn-group {
   cursor: pointer;
   font-size: 30px;
 }
 
+.App__Dark .btn-group {
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+}
+
 .btn-group:hover {
   color: gray;
+}
+
+.App__Dark .navbar-brand{
+  color: whitesmoke;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/AboutMe.css';
+import '../styles/AboutMe.css';
 import joana from '../images/joana-photo.jpeg';
 import Header from '../components/Header';
 
