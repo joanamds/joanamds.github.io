@@ -23,3 +23,23 @@
   padding: 50px;
   width: 1000px;
 }
+
+.buttons-card {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.projects-page button {
+  background-color: #5630ad;
+  border-color: #5630ad;
+}
+
+.projects-page button:hover {
+  background-color: gray;
+}

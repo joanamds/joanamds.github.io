@@ -7,7 +7,7 @@ const projects = [
     image: SolarSystem,
     page: 'https://joanamds.github.io/projeto-solar-system/',
     repo: 'https://github.com/joanamds/projeto-solar-system',
-  }
+  },
 ];
 
 export default projects;
