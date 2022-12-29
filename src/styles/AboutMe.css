@@ -12,6 +12,7 @@
 }
 
 .App__Light .about-container {
+  align-items: center;
   margin: auto;
   margin-top: 50px;
   text-align: center;
@@ -25,6 +26,7 @@
 }
 
 .App__Dark .about-container {
+  align-items: center;
   margin: auto;
   margin-top: 50px;
   text-align: center;
@@ -40,12 +42,16 @@
 .App__Dark .title-name {
   margin-top: 0px;
   padding: 20px;
-  color: whitesmoke
+  color: whitesmoke;
+  font-family: 'Gochi Hand', cursive;
+  color: #7c4887;
 }
 
 .App__Light .title-name {
   margin-top: 0px;
   padding: 20px;
+  font-family: 'Gochi Hand', cursive;
+  color: #7c4887;
 }
 
 .App__Light .subtitle-who {
@@ -84,6 +90,6 @@
   border-radius: 50%;
   border-style: solid;
   border-width: 10px;
-  border-color: white;
+  color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

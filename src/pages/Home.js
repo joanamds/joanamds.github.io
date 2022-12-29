@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import '../styles/Home.css';
-import developer from '../images/developer-female.png';
+import developer from '../images/girl-dev.png';
 import { useHistory } from 'react-router-dom';
 
 function Home() {

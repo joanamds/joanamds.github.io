@@ -72,4 +72,5 @@
 
 .projects-page button:hover {
   background-color: gray;
+  border-color: gray;
 }
