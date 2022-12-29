@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap') ;
+
+.App__Light .contact-page h1 {
+  font-family: 'Gochi Hand', cursive;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.App__Dark .contact-page h1 {
+  font-family: 'Gochi Hand', cursive;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
