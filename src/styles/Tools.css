@@ -62,8 +62,3 @@
   flex-direction: column;
 }
 
-.will-learn {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
