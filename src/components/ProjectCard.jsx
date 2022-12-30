@@ -14,10 +14,10 @@ function ProjectCard({ projectName, projectImage, projectPage, projectRepo, proj
         </Card.Text>
         <div className="buttons-card">
           <Card.Link href={projectPage} target="_blank" rel="noopener noreferrer">
-            <Button><FaGithub />Github Page</Button>
+            <Button variant="secondary"><FaGithub />Github Page</Button>
           </Card.Link>
           <Card.Link href={projectRepo} target="_blank" rel="noopener noreferrer">
-            <Button><FaFileCode />Repositório</Button>
+            <Button variant="secondary"><FaFileCode />Repositório</Button>
           </Card.Link>
         </div>
       </Card.Body>

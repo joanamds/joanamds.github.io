@@ -65,12 +65,12 @@
   color: whitesmoke;
 }
 
-.projects-page button {
-  background-color: #5630ad;
-  border-color: #5630ad;
+.btn-secondary {
+  background-color: #7c4887 !important;
+  border-color: #7c4887 !important;
 }
 
-.projects-page button:hover {
-  background-color: gray;
-  border-color: gray;
+.btn-secondary:hover {
+  background-color: gray !important;
+  border-color: gray !important;
 }
