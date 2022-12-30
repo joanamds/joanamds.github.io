@@ -72,3 +72,8 @@
   margin-left: 55px;
   text-align: center;
 }
+
+.email-item {
+  display: flex;
+  align-items: center;
+}
