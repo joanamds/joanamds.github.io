@@ -14,8 +14,9 @@ function Tools() {
       <Header />
       <h1>Tecnologias e ferramentas</h1>
       <div className="table-container">
+          <h2 className="learn-title">O que já aprendi</h2>
+          <h2 className="will-learn-title">O que vou aprender</h2>
         <div className="learn">
-          <h2>O que já aprendi</h2>
           <Table striped bordered hover variant={ isDarkTheme? 'dark' : 'light'}>
             <tbody>
               <tr>
@@ -52,7 +53,6 @@ function Tools() {
         </Table>
         </div>
         <div className="will-learn">
-          <h2>O que vou aprender</h2>
           <Table striped bordered hover variant={isDarkTheme ? 'dark' : 'light'}>
             <tbody>
               <tr>

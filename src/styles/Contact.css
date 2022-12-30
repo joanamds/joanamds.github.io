@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap') ;
+
+.App__Light .contact-page h1 {
+  font-family: 'Gochi Hand', cursive;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.App__Dark .contact-page h1 {
+  font-family: 'Gochi Hand', cursive;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
+
+.contact-page svg {
+  font-size: 30px;
+}
+
+.email .btn btn-link {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+/* .btn-custom {
+  margin-left: 10px;
+  background-color: red;
+} */
+
+.btn-primary {
+  background-color: #0078B8 !important;
+  border-color: #0078B8 !important;
+  margin-left: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #01a6ffe3 !important;
+  border-color: #01a6ffe3 !important;
+}
+
+.btn-dark {
+  margin-left: 10px;
+}

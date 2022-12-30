@@ -26,6 +26,7 @@
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 50px;
   width: 1000px;
@@ -40,6 +41,7 @@
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);  
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding: 50px;
   width: 1000px;
@@ -62,3 +64,11 @@
   flex-direction: column;
 }
 
+.learn-title {
+  margin-left: 60px;
+}
+
+.will-learn-title {
+  margin-left: 55px;
+  text-align: center;
+}
