@@ -16,7 +16,7 @@ function Projects() {
       <Header />
       <h1>Projetos</h1>
       <div className="carousel-container">
-        <Carousel slide={false} variant={isDarkTheme ? 'light' : 'dark'}>
+        <Carousel interval={ null } variant={isDarkTheme ? 'light' : 'dark'}>
           {projects.map((project, index) => (
           <Carousel.Item>
             <ProjectCard
