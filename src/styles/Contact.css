@@ -17,7 +17,27 @@
   font-size: 30px;
 }
 
-.email {
+.email .btn btn-link {
   margin-top: 20px;
+  margin-left: 10px;
+}
+
+/* .btn-custom {
+  margin-left: 10px;
+  background-color: red;
+} */
+
+.btn-primary {
+  background-color: #0078B8 !important;
+  border-color: #0078B8 !important;
+  margin-left: 10px;
+}
+
+.btn-primary:hover {
+  background-color: #01a6ffe3 !important;
+  border-color: #01a6ffe3 !important;
+}
+
+.btn-dark {
   margin-left: 10px;
 }

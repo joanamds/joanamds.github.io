@@ -1,14 +1,21 @@
 import React, { useContext } from 'react';
 import Header from '../components/Header';
 import '../styles/Contact.css';
+import copy from 'clipboard-copy';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import ThemeContext from '../context/ThemeContext';
+import { Button } from 'react-bootstrap';
 
 function Contact() {
   const { isDarkTheme } = useContext(ThemeContext);
+
+  const emailClick = () => {
+    copy('joanamdsantos1@gmail.com');
+    alert('Email copiado no clipboard');
+  }
 
   return (
     <div className="contact-page">
@@ -17,13 +24,27 @@ function Contact() {
       <Card style={{ width: '30rem' }} variant={ isDarkTheme ? 'dark' : 'light'}>
         <ListGroup>
           <ListGroup.Item variant={isDarkTheme ? 'dark' : 'light'}>
-            <div className="email-item">
               <MdEmail style={{ color: '#F14133' }} />
-              <p className="email">joanamdsantos1@gmail.com</p>
-            </div>
+              <Button variant="link" onClick={emailClick} className="email">
+                joanamdsantos1@gmail.com
+              </Button>
           </ListGroup.Item>
-          <ListGroup.Item variant={isDarkTheme ? 'dark' : 'light'}><FaLinkedin style={{ color: '#0078B8' }} /></ListGroup.Item>
-          <ListGroup.Item variant={isDarkTheme ? 'dark' : 'light'}><FaGithub style={{ color: 'black' }} /></ListGroup.Item>
+          <ListGroup.Item variant={isDarkTheme ? 'dark' : 'light'}>
+            <FaLinkedin style={{ color: '#0078B8' }} />
+            <a href="https://www.linkedin.com/in/dev-joanamds/" target="_blank" rel="noopener noreferrer">
+              <Button className="linkedin">
+                Linkedin
+              </Button>
+            </a>
+          </ListGroup.Item>
+          <ListGroup.Item variant={isDarkTheme ? 'dark' : 'light'}>
+            <FaGithub style={{ color: 'black' }} />
+            <a href="https://github.com/joanamds" target="_blank" rel="noopener noreferrer">
+              <Button variant="dark">
+                Github
+              </Button>
+            </a>
+          </ListGroup.Item>
           </ListGroup>
         </Card>
     </div>
