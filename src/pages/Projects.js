@@ -16,7 +16,7 @@ function Projects() {
   return (
     <div className="projects-page">
       <Header />
-      <h1>Projetos</h1>
+      <h1>{ isEnglish ? 'Projects' : 'Projetos'}</h1>
       <div className="carousel-container">
         <Carousel interval={ null } variant={isDarkTheme ? 'light' : 'dark'}>
           {projects.map((project, index) => (
