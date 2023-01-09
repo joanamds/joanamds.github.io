@@ -17,7 +17,7 @@ function Tools() {
       <h1>{ isEnglish ? 'Technologies and tools' : 'Tecnologias e ferramentas'}</h1>
       <div className="table-container">
         <h2 className="learn-title">{isEnglish ? `What I've learned` : 'O que já aprendi'}</h2>
-        <h2 className="will-learn-title">{isEnglish ? `What I'll learn` : 'O que vou aprender'}</h2>
+        <h2 className="will-learn-title">{isEnglish ? `What I will learn` : 'O que vou aprender'}</h2>
         <div className="learn">
           <Table striped bordered hover variant={ isDarkTheme? 'dark' : 'light'}>
             <tbody>

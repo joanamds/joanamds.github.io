@@ -44,3 +44,27 @@
   left: 50%;
   margin-left: -60px;
 }
+
+.btn-dark {
+  font-size: 14px !important;
+}
+
+.btn-dark:hover {
+  border-color: #7c4887 !important;
+}
+
+.btn-dark:disabled {
+  border-color: gray !important;
+}
+
+.btn-light {
+  font-size: 14px !important;
+}
+
+.btn-light:hover {
+  border-color: #7c4887 !important;
+}
+
+.btn-light:disabled {
+  border-color: gray !important;
+}
