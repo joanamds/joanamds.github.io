@@ -8,9 +8,11 @@ import { MdEmail } from "react-icons/md";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import ThemeContext from '../context/ThemeContext';
 import { Button } from 'react-bootstrap';
+import LanguageContext from '../context/LanguageContext';
 
 function Contact() {
   const { isDarkTheme } = useContext(ThemeContext);
+  const { isEnglish } = useContext(LanguageContext);
 
   const emailClick = () => {
     copy('joanamdsantos1@gmail.com');
@@ -20,7 +22,7 @@ function Contact() {
   return (
     <div className="contact-page">
       <Header />
-      <h1>Contato</h1>
+      <h1>{isEnglish ? 'Contact' : 'Contato'}</h1>
       <Card style={{ width: '30rem' }} variant={ isDarkTheme ? 'dark' : 'light'}>
         <ListGroup>
           <ListGroup.Item variant={isDarkTheme ? 'dark' : 'light'}>

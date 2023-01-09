@@ -5,11 +5,13 @@ import '../styles/Projects.css'
 import projects from '../data/projectsData';
 import ProjectCard from '../components/ProjectCard';
 import ThemeContext from '../context/ThemeContext';
+import LanguageContext from '../context/LanguageContext';
 
 
 
 function Projects() {
   const { isDarkTheme } = useContext(ThemeContext);
+  const { isEnglish } = useContext(LanguageContext);
 
   return (
     <div className="projects-page">
@@ -25,7 +27,7 @@ function Projects() {
               projectImage={project.image}
               projectPage={project.page}
               projectRepo={project.repo}
-              projectDescription={project.description}
+              projectDescription={ isEnglish ? project.descriptionENG : project.description}
             />
           </Carousel.Item>
           ))}

@@ -5,17 +5,19 @@ import toolsWillLearn from '../data/toolsWillLearn';
 import Table from 'react-bootstrap/Table';
 import '../styles/Tools.css';
 import ThemeContext from '../context/ThemeContext';
+import LanguageContext from '../context/LanguageContext';
 
 function Tools() {
   const { isDarkTheme } = useContext(ThemeContext);
+  const { isEnglish } = useContext(LanguageContext);
 
   return (
     <div className="tools-page">
       <Header />
-      <h1>Tecnologias e ferramentas</h1>
+      <h1>{ isEnglish ? 'Technologies and tools' : 'Tecnologias e ferramentas'}</h1>
       <div className="table-container">
-          <h2 className="learn-title">O que já aprendi</h2>
-          <h2 className="will-learn-title">O que vou aprender</h2>
+        <h2 className="learn-title">{isEnglish ? `What I've learned` : 'O que já aprendi'}</h2>
+        <h2 className="will-learn-title">{isEnglish ? `What I'll learn` : 'O que vou aprender'}</h2>
         <div className="learn">
           <Table striped bordered hover variant={ isDarkTheme? 'dark' : 'light'}>
             <tbody>
