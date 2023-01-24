@@ -16,9 +16,12 @@ function ProjectCard({ projectName, projectImage, projectPage, projectRepo, proj
           { projectDescription }
         </Card.Text>
         <div className="buttons-card">
-          <Card.Link href={projectPage} target="_blank" rel="noopener noreferrer">
-            <Button variant="secondary"><FaGithub />Github Page</Button>
-          </Card.Link>
+          {projectPage != null ? 
+            <Card.Link href={projectPage} target="_blank" rel="noopener noreferrer">
+              <Button variant="secondary"><FaGithub />Github Page</Button>
+            </Card.Link>
+            : <></>
+          }
           <Card.Link href={projectRepo} target="_blank" rel="noopener noreferrer">
             <Button variant="secondary"><FaFileCode />{ isEnglish ? 'Repository' : 'Repositório'}</Button>
           </Card.Link>
