@@ -2,8 +2,11 @@ import SolarSystem from '../images/projects_images/solar-system.png';
 import Trybetunes from '../images/projects_images/trybetunes.png';
 import OnlineStore from '../images/projects_images/online-store.png';
 import TrybeWallet from '../images/projects_images/trybewallet.png';
+import ZooFunctions from '../images/projects_images/zoo-functions.png';
+import TodoList from '../images/projects_images/todo-list.png';
 
-const projects = [
+
+export const projectsFront = [
   {
     title: 'Solar System',
     descriptionENG: 'It is a page that renders the solar system planets and some famous space missions.',
@@ -38,4 +41,25 @@ const projects = [
   },
 ];
 
-export default projects;
+export const projectsBack = [
+  {
+    title: 'Docker Todo List',
+    descriptionENG: 'The project aimed to build containers using Docker for an existing application. This was achieved by creating Dockerfile files and a docker-compose file.',
+    description: 'O objetivo do projeto foi dockerizar a aplicação Todo App que já estava pronta. Para isso desenvolvemos arquivos Dockerfile e um arquivo docker-compose.',
+    image: TodoList,
+    page: null,
+    repo: 'https://github.com/joanamds/projeto-solar-system',
+  },
+];
+
+export const projectsFundamentals = [
+  {
+    title: 'Zoo Functions',
+    descriptionENG: 'In order to learn more about Higher Order Functions we needed to create functions to simulate a zoo reporting system, collaborators, opening hours and a price list that varies according to the age of the visitors',
+    description: 'Para fixar o conteúdo de Higher Order Functions desenvolvemos funções para simular um sistema de relatório de um zoológico, colaboradores, horários de funcionamento e uma tabela de preços que varia de acordo com a idade das pessoas que o visitam.',
+    image: ZooFunctions,
+    page: null,
+    repo: 'https://github.com/joanamds/projeto-zoo-functions',
+  },
+];
+

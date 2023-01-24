@@ -16,7 +16,7 @@ function Contact() {
 
   const emailClick = () => {
     copy('joanamdsantos1@gmail.com');
-    alert('Email copiado no clipboard');
+    alert(isEnglish ? 'Email copied on clipboard' : 'Email copiado no clipboard');
   }
 
   return (
