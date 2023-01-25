@@ -4,6 +4,7 @@ import OnlineStore from '../images/projects_images/online-store.png';
 import TrybeWallet from '../images/projects_images/trybewallet.png';
 import ZooFunctions from '../images/projects_images/zoo-functions.png';
 import TodoList from '../images/projects_images/todo-list.png';
+import AllForOne from '../images/projects_images/all-for-one.png';
 
 
 export const projectsFront = [
@@ -49,6 +50,14 @@ export const projectsBack = [
     image: TodoList,
     page: null,
     repo: 'https://github.com/joanamds/projeto-solar-system',
+  },
+  {
+    title: 'All For One',
+    descriptionENG: 'We have 27 challenges to complete to practice SQL queries. The first set of challenges involve using SELECT and create data. The next set of challenges involve filtering data and the final set of challenges involve manipulating tables.',
+    description: 'Para praticarmos as queries de SQL que aprendemos nos foi proposto 27 desafios. Primeiro foram desafios para fazer SELECT e criar dados. Em seguida foram desafios para filtrar dados. Por último fizemos desafios para manipular tabelas.',
+    image: AllForOne,
+    page: null,
+    repo: 'https://github.com/joanamds/projeto-all-for-one',
   },
 ];
 
