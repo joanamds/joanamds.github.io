@@ -9,4 +9,4 @@ Para a estilização utilizei a biblioteca [React Bootstrap](https://react-boots
 Front-end:
 > Desenvolvido usando: React, React Hooks, CSS3, HTML5, ES6
 
-![screen-recording (5)](https://user-images.githubusercontent.com/106452876/211377498-f7a9d17b-d4a1-49fb-b1dd-3d8497c6b5ac.gif)
+[Portfolio.webm](https://user-images.githubusercontent.com/106452876/214578081-1aa49081-0543-4343-b142-922ec03a81fd.webm)
