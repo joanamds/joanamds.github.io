@@ -9,7 +9,7 @@ import TodoList from '../images/projects_images/todo-list.png';
 export const projectsFront = [
   {
     title: 'Solar System',
-    descriptionENG: 'It is a page that renders the solar system planets and some famous space missions.',
+    descriptionENG: 'This is a page that renders the solar system planets and highlights notable space missions.',
     description: 'É uma página que renderiza os planetas do sistema solar e algumas missões espaciais famosas.',
     image: SolarSystem,
     page: 'https://joanamds.github.io/projeto-solar-system/',
@@ -18,7 +18,7 @@ export const projectsFront = [
   {
     title: 'TrybeTunes',
     description: 'É uma aplicação para pesquisar e listar álbuns e músicas de várias bandas e artistas. É possível ouvir uma prévia das músicas do álbum e adicionar as músicas favoritas em uma lista.',
-    descriptionENG: 'It is an application to search and list albums and songs of various bands and artists. You can listen a preview of the songs in the album and add favorite songs on a list.',
+    descriptionENG: 'This application allows users to search and browse albums and songs from various bands and artists. It features a preview option for songs in an album and the ability to create a list of favorite songs.',
     image: Trybetunes,
     page: 'https://joanamds.github.io/projeto-trybetunes/',
     repo: 'https://github.com/joanamds/projeto-trybetunes',
@@ -26,7 +26,7 @@ export const projectsFront = [
   {
     title: 'Online Store',
     description: 'Foi um projeto realizado em grupo, precisamos fazer uma loja online alimentada pela API do mercado livre. No app é possível filtrar os produtos por categoria, pesquisar na barra de pesquisa, adicionar, remover e alterar a quantidade do produto no carrinho e em seguida finalizar a compra em uma página de checkout.',
-    descriptionENG: 'It was a group project. We need to make a online store using an API of the site Mercado Livre. In the app it is possible to filter products by category, search in the search bar, add, remove and change the quantity of the product in the cart and then complete the purchase on a checkout page.',
+    descriptionENG: 'This group project involved creating an online store utilizing the Mercado Livre API. The app allows users to filter products by category, search using a search bar, add, remove, and adjust the quantity of items in their cart, and complete purchases on a checkout page.',
     image: OnlineStore,
     page: 'https://joanamds.github.io/projeto-frontend-online-store/',
     repo: 'https://github.com/joanamds/projeto-frontend-online-store',
@@ -34,7 +34,7 @@ export const projectsFront = [
   {
     title: 'TrybeWallet',
     description: 'É uma aplicação que salva os gastos do usuário e converte tudo para uma única moeda. Para obter as informações da cotação, nomes de moedas e outros dados sobre as moedas utilizamos a API de Cotações de Moedas.',
-    descriptionENG: 'It is an application that saves user expenses and converts all to a single currency. To get current quotation, coins name and other data about the coins it was used an API of coins quotation',
+    descriptionENG: 'The application is developed to track and manage user expenses, converting them to a single currency. It utilizes an API to obtain current exchange rates, coin names, and other relevant information.',
     image: TrybeWallet,
     page: 'https://joanamds.github.io/projeto-trybewallet/',
     repo: 'https://github.com/joanamds/projeto-trybewallet',
@@ -55,7 +55,7 @@ export const projectsBack = [
 export const projectsFundamentals = [
   {
     title: 'Zoo Functions',
-    descriptionENG: 'In order to learn more about Higher Order Functions we needed to create functions to simulate a zoo reporting system, collaborators, opening hours and a price list that varies according to the age of the visitors',
+    descriptionENG: 'To gain a deeper understanding of Higher Order Functions we needed to create functions to simulate a zoo reporting system, collaborators, opening hours and a price list that varies according to the age of the visitors',
     description: 'Para fixar o conteúdo de Higher Order Functions desenvolvemos funções para simular um sistema de relatório de um zoológico, colaboradores, horários de funcionamento e uma tabela de preços que varia de acordo com a idade das pessoas que o visitam.',
     image: ZooFunctions,
     page: null,
