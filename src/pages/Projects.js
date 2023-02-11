@@ -3,12 +3,10 @@ import Header from '../components/Header';
 import Carousel from 'react-bootstrap/Carousel';
 import Dropdown from 'react-bootstrap/Dropdown';
 import '../styles/Projects.css'
-import { projectsFront, projectsBack, projectsFundamentals } from '../data/projectsData';
+import { projectsFront, projectsBack, projectsFundamentals, personalProjects } from '../data/projectsData';
 import ProjectCard from '../components/ProjectCard';
 import ThemeContext from '../context/ThemeContext';
 import LanguageContext from '../context/LanguageContext';
-
-
 
 function Projects() {
   const { isDarkTheme } = useContext(ThemeContext);
@@ -26,6 +24,9 @@ function Projects() {
         break;
       case 'backend':
         setProjects(projectsBack)
+        break;
+      case 'personal':
+        setProjects(personalProjects)
         break;
       default:
         return projects;
@@ -47,6 +48,9 @@ function Projects() {
           </Dropdown.Item>
           <Dropdown.Item onClick={ () => setModule('frontend') } >Front End</Dropdown.Item>
           <Dropdown.Item onClick={() => setModule('backend')}>Back End</Dropdown.Item>
+          <Dropdown.Item onClick={() => setModule('personal')}>
+            {isEnglish ? 'Personal projects' : 'Projetos pessoais'}
+          </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
       <div className="carousel-container">

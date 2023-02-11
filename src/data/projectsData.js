@@ -7,6 +7,7 @@ import TodoList from '../images/projects_images/todo-list.png';
 import AllForOne from '../images/projects_images/all-for-one.png';
 import OneForAll from '../images/projects_images/one-for-all.png';
 import TalkerManager from '../images/projects_images/talker-manager.png';
+import BestBollywood from '../images/projects_images/best-bollywood.png';
 
 export const projectsFront = [
   {
@@ -85,6 +86,17 @@ export const projectsFundamentals = [
     description: 'Para fixar o conteúdo de Higher Order Functions desenvolvemos funções para simular um sistema de relatório de um zoológico, colaboradores, horários de funcionamento e uma tabela de preços que varia de acordo com a idade das pessoas que o visitam.',
     image: ZooFunctions,
     page: null,
+    repo: 'https://github.com/joanamds/projeto-zoo-functions',
+  },
+];
+
+export const personalProjects = [
+  {
+    title: 'Best Bollywood',
+    descriptionENG: 'Although Bollywood films may not be widely recognized in Brazil, I have developed a love for them after watching many of them. To showcase my favorites, I created a simple application using foundational concepts in React, which displays a list of my favorite Bollywood movies.',
+    description: 'Os filmes de Bollywood não são muito conhecidos aqui no Brasil, mas eu já assisti vários e adoro! Então, criei uma aplicação bem simples utilizando conceitos básicos de React para renderizar uma lista de filmes que estão na minha lista de favoritos!',
+    image: BestBollywood,
+    page: 'https://joanamds.github.io/best-bollywood/',
     repo: 'https://github.com/joanamds/projeto-zoo-functions',
   },
 ];
