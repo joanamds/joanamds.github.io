@@ -5,7 +5,8 @@ import TrybeWallet from '../images/projects_images/trybewallet.png';
 import ZooFunctions from '../images/projects_images/zoo-functions.png';
 import TodoList from '../images/projects_images/todo-list.png';
 import AllForOne from '../images/projects_images/all-for-one.png';
-
+import OneForAll from '../images/projects_images/one-for-all.png';
+import TalkerManager from '../images/projects_images/talker-manager.png';
 
 export const projectsFront = [
   {
@@ -58,6 +59,22 @@ export const projectsBack = [
     image: AllForOne,
     page: null,
     repo: 'https://github.com/joanamds/projeto-all-for-one',
+  },
+  {
+    title: 'One For All',
+    descriptionENG: 'For this project, we received a non-normalized table and we need to normalize it to the third normal form. Then we need to create the normalized tables and interact with them by creating queries to join the information from the tables using the JOIN method.',
+    description: 'Para este projeto recebemos uma tabela não normalizada e precisamos normalizá-la na terceira forma normal. Em seguida precisamos criar as tabelas normalizadas e interagir com elas criando queries para juntar as informações das tabelas utilizando o método JOIN.',
+    image: OneForAll,
+    page: null,
+    repo: 'https://github.com/joanamds/projeto-one-for-all',
+  },
+  {
+    title: 'Talker Manager',
+    descriptionENG: 'For this project, we were tasked with utilizing Node.js to develop an API with CRUD (create, read, update, delete) functionality for talkers. Additionally, we needed to create endpoints that allow for reading and writing to a file using the "fs" module.',
+    description: 'Este projeto foi o primeiro projeto utilizando Node.js em que foi preciso construir uma API com CRUD(Create Read Update Delete) de palestrantes. Foi preciso desenvolver endpoints para ler e escrever em um arquivo utilizando o módulo "fs".',
+    image: TalkerManager,
+    page: null,
+    repo: 'https://github.com/joanamds/projeto-talker-manager',
   },
 ];
 
