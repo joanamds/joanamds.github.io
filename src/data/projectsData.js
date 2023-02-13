@@ -97,7 +97,7 @@ export const personalProjects = [
     description: 'Os filmes de Bollywood não são muito conhecidos aqui no Brasil, mas eu já assisti vários e adoro! Então, criei uma aplicação bem simples utilizando conceitos básicos de React para renderizar uma lista de filmes que estão na minha lista de favoritos!',
     image: BestBollywood,
     page: 'https://joanamds.github.io/best-bollywood/',
-    repo: 'https://github.com/joanamds/projeto-zoo-functions',
+    repo: 'https://github.com/joanamds/best-bollywood',
   },
 ];
 
