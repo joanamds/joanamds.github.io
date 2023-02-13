@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1bbcb8fc.css",
-    "main.js": "/static/js/main.f59a8ffb.js",
+    "main.js": "/static/js/main.b252db5d.js",
     "static/media/solar-system.png": "/static/media/solar-system.49bad0dced99f6bd9529.png",
     "static/media/best-bollywood.png": "/static/media/best-bollywood.89c7f91f38cc63475270.png",
     "static/media/online-store.png": "/static/media/online-store.e7e88a6e3fd032e00278.png",
@@ -35,10 +35,10 @@
     "index.html": "/index.html",
     "static/media/html.svg": "/static/media/html.8664168d5bc90b1a24396f85aadbf623.svg",
     "main.1bbcb8fc.css.map": "/static/css/main.1bbcb8fc.css.map",
-    "main.f59a8ffb.js.map": "/static/js/main.f59a8ffb.js.map"
+    "main.b252db5d.js.map": "/static/js/main.b252db5d.js.map"
   },
   "entrypoints": [
     "static/css/main.1bbcb8fc.css",
-    "static/js/main.f59a8ffb.js"
+    "static/js/main.b252db5d.js"
   ]
 }
