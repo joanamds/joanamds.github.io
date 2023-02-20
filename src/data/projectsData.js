@@ -8,6 +8,8 @@ import AllForOne from '../images/projects_images/all-for-one.png';
 import OneForAll from '../images/projects_images/one-for-all.png';
 import TalkerManager from '../images/projects_images/talker-manager.png';
 import BestBollywood from '../images/projects_images/best-bollywood.png';
+import DisneyCharacters from '../images/projects_images/disney-characters.png';
+import StoreManager from '../images/projects_images/store-manager.png';
 
 export const projectsFront = [
   {
@@ -77,6 +79,14 @@ export const projectsBack = [
     page: null,
     repo: 'https://github.com/joanamds/projeto-talker-manager',
   },
+  {
+    title: 'Store Manager',
+    descriptionENG: 'For this application we have to create an API that emulates  a stores inventory management system, including the storage and tracking of products and sales data.',
+    description: 'Para esta aplicação precisamos criar uma API que simulasse o funcionamento de uma loja, armazenando dados de produtos e de vendas.',
+    image: StoreManager,
+    page: null,
+    repo: 'https://github.com/joanamds/store-manager',
+  },
 ];
 
 export const projectsFundamentals = [
@@ -98,6 +108,14 @@ export const personalProjects = [
     image: BestBollywood,
     page: 'https://joanamds.github.io/best-bollywood/',
     repo: 'https://github.com/joanamds/best-bollywood',
+  },
+  {
+    title: 'Disney Characters',
+    descriptionENG: 'This webpage displays a list of Disney characters, and allows you to search for characters using the search bar.',
+    description: 'É uma aplicação que renderiza os personagens da Disney, também é possível procurar personagens na barra de busca.',
+    image: DisneyCharacters,
+    page: 'https://joanamds.github.io/disney-characters/',
+    repo: 'https://github.com/joanamds/disney-characters',
   },
 ];
 
