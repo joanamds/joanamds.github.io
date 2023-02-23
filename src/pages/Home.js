@@ -25,25 +25,25 @@ function Home() {
             className="button-home"
             onClick={ ()=> history.push('/aboutme')}
           >
-            { isEnglish ? 'About me' : 'Sobre mim'}
+            <span>{ isEnglish ? 'About me' : 'Sobre mim'}</span>
           </button>
           <button
             className="button-home"
             onClick={() => history.push('/projects')}
           >
-            {isEnglish ? 'Projects' : 'Projetos'}
+            <span>{isEnglish ? 'Projects' : 'Projetos'}</span>
           </button>
           <button
             className="button-home"
             onClick={() => history.push('/tools')}
           >
-            {isEnglish ? 'Tools and technologies' : 'Tecnologias e ferramentas'}
+            <span>{isEnglish ? 'Tools and technologies' : 'Tecnologias e ferramentas'}</span>
           </button>
           <button
             className="button-home"
             onClick={() => history.push('/contact')}
           >
-            {isEnglish ? 'Contact' : 'Contato'}
+            <span>{isEnglish ? 'Contact' : 'Contato'}</span>
           </button>
         </div>
       </div>
