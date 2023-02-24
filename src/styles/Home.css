@@ -50,30 +50,47 @@
   justify-content: space-between;
 }
 
-.button-home {
-  color: gray;
-  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%);
-  border: none;
+.App__Dark .button-home {
+  color: white;
+  background-color: black;
+  border: 3px solid transparent;
   border-radius: 5px;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
   font-size: 18px;
   font-weight: 700;
   margin-top: 16px;
   outline: none;
   transition: all 300ms ease-in;
-  padding: 8px 4px;
+  padding: 8px 38px;
 }
 
-.App__Dark .button-home span {
+.App__Light .button-home {
+  color: black;
+  background-color: white;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 16px;
+  outline: none;
+  transition: all 300ms ease-in;
+  padding: 8px 38px;
+}
+
+/* .App__Dark .button-home span {
   background: #181818;
   border-radius: 5px;
-  padding: 10px 22px;
+  padding: 10px 34px;
 }
 
 .App__Light .button-home span {
   background: white;
   border-radius: 5px;
   padding: 10px 20px;
-}
+} */
 
 .button-home:hover {
   transform: scale(1.3);

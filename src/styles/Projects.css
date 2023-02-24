@@ -52,11 +52,11 @@
 }
 
 .App__Dark .card-title {
-  color: whitesmoke;
+  color: black;
 }
 
 .App__Dark .card-text {
-  color: whitesmoke;
+  color: black;
 }
 
 .btn-secondary {
@@ -65,7 +65,8 @@
 }
 
 .btn-secondary:hover {
-  background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 100%) !important;
+  color: black !important;
+  background-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
 }
 
 .dropdown-css {
