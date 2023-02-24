@@ -17,15 +17,19 @@
   font-size: 30px;
 }
 
+.contact-page li {
+  list-style-type: none;
+}
+
 .email .btn btn-link {
   margin-top: 20px;
   margin-left: 10px;
 }
 
-/* .btn-custom {
+.btn-custom {
   margin-left: 10px;
   background-color: red;
-} */
+}
 
 .btn-primary {
   background-color: #0078B8 !important;

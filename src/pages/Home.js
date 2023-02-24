@@ -1,12 +1,23 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import Header from '../components/Header';
 import '../styles/Home.css';
 import developer from '../images/girl-dev.png';
 import { useHistory } from 'react-router-dom';
 import LanguageContext from '../context/LanguageContext';
 import '../styles/Title.scss'
+import Contact from '../components/ContactModal';
+import { Button, Modal } from 'react-bootstrap';
 
 function Home() {
+  const [isShow, invokeModal] = useState(false)
+
+  const initModal = () => {
+    if (isShow) {
+      return invokeModal(false)
+    }
+    return invokeModal(true);
+  }
+
   const history = useHistory();
   const { isEnglish } = useContext(LanguageContext);
 
@@ -34,11 +45,25 @@ function Home() {
             <span>{isEnglish ? 'Projects' : 'Projetos'}</span>
           </button>
           <button
+            type="button"
             className="button-home"
-            onClick={() => history.push('/contact')}
+            onClick={initModal}
           >
             <span>{isEnglish ? 'Contact' : 'Contato'}</span>
           </button>
+          <Modal show={isShow}>
+            <Modal.Header closeButton onClick={initModal}>
+              <Modal.Title>{isEnglish ? 'Contact' : 'Contato'}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              <Contact />
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="danger" onClick={initModal}>
+                { isEnglish ? 'Close' : 'Fechar'}
+              </Button>
+            </Modal.Footer>
+          </Modal>
         </div>
       </div>
     </div>
