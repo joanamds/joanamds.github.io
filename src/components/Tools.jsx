@@ -11,6 +11,7 @@ function Tools() {
   return (
     <div className="my-tools">
       <hr />
+      <h2>Tecnologias e ferramentas</h2>
       <ul>
         <li><SiCss3 /></li>
         <li><SiJavascript /></li>
