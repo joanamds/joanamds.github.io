@@ -7,6 +7,7 @@ import { projectsFront, projectsBack, projectsFundamentals, personalProjects } f
 import ProjectCard from '../components/ProjectCard';
 import ThemeContext from '../context/ThemeContext';
 import LanguageContext from '../context/LanguageContext';
+import '../styles/Title.scss';
 
 function Projects() {
   const { isDarkTheme } = useContext(ThemeContext);
@@ -36,12 +37,14 @@ function Projects() {
   return (
     <div className="projects-page">
       <Header />
-      <h1>{isEnglish ? 'Projects' : 'Projetos'}</h1>
+      <div className="carousel-container">
+      <div className="typewriter">
+        <h1>{isEnglish ? 'These are my projects' : 'Estes são meus projetos'}</h1>
+      </div>
       <Dropdown className="dropdown-css">
         <Dropdown.Toggle variant={ isDarkTheme ? 'dark' : 'light' } id="dropdown-basic">
           {isEnglish ? 'Module' : 'Módulo'}
         </Dropdown.Toggle>
-
         <Dropdown.Menu>
           <Dropdown.Item onClick={() => setModule('fundamentals')}>
             { isEnglish? 'Fundamentals': 'Fundamentos do Desenvolvimento Web' }
@@ -53,7 +56,6 @@ function Projects() {
           </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
-      <div className="carousel-container">
         <Carousel interval={ null } variant={isDarkTheme ? 'light' : 'dark'}>
           {projects.map((project, index) => (
           <Carousel.Item>

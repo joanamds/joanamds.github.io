@@ -17,9 +17,6 @@ function Home() {
         <div className="typewriter">
           <h1>{isEnglish ? 'Hello World! My name is Joana' : 'Hello World! Meu nome é Joana'}</h1>
         </div>
-        <h2>{isEnglish
-          ? 'I am a full stack developer'
-          : 'Sou desenvolvedora full stack'}</h2>
         <div className="image-container">
           <img src={developer} alt="female developer" width="500" className="image-developer" />
         </div>
