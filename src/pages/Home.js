@@ -33,12 +33,6 @@ function Home() {
           >
             <span>{isEnglish ? 'Projects' : 'Projetos'}</span>
           </button>
-          {/* <button
-            className="button-home"
-            onClick={() => history.push('/tools')}
-          >
-            <span>{isEnglish ? 'Tools and technologies' : 'Tecnologias e ferramentas'}</span>
-          </button> */}
           <button
             className="button-home"
             onClick={() => history.push('/contact')}

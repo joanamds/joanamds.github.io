@@ -4,7 +4,6 @@ import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
-import Tools from './pages/Tools';
 
 function Routes() {
   return (
@@ -13,7 +12,6 @@ function Routes() {
       <Route exact path="/aboutme" component={AboutMe} />
       <Route exact path="/contact" component={Contact} />
       <Route exact path="/projects" component={Projects} />
-      <Route exact path="/tools" component={Tools} />
     </Switch>
   );
 }

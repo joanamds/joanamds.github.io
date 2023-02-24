@@ -7,9 +7,10 @@ import TodoList from '../images/projects_images/todo-list.png';
 import AllForOne from '../images/projects_images/all-for-one.png';
 import OneForAll from '../images/projects_images/one-for-all.png';
 import TalkerManager from '../images/projects_images/talker-manager.png';
-import BestBollywood from '../images/projects_images/best-bollywood.png';
+import BestIndianMovies from '../images/projects_images/best-indian-movies.png';
 import DisneyCharacters from '../images/projects_images/disney-characters.png';
 import StoreManager from '../images/projects_images/store-manager.png';
+import EscolasDeSamba from '../images/projects_images/escolas-de-samba.png';
 
 export const projectsFront = [
   {
@@ -102,12 +103,12 @@ export const projectsFundamentals = [
 
 export const personalProjects = [
   {
-    title: 'Best Bollywood',
-    descriptionENG: 'Although Bollywood films may not be widely recognized in Brazil, I have developed a love for them after watching many of them. To showcase my favorites, I created a simple application using foundational concepts in React, which displays a list of my favorite Bollywood movies.',
-    description: 'Os filmes de Bollywood não são muito conhecidos aqui no Brasil, mas eu já assisti vários e adoro! Então, criei uma aplicação bem simples utilizando conceitos básicos de React para renderizar uma lista de filmes que estão na minha lista de favoritos!',
-    image: BestBollywood,
-    page: 'https://joanamds.github.io/best-bollywood/',
-    repo: 'https://github.com/joanamds/best-bollywood',
+    title: 'Best Indian Movies',
+    descriptionENG: 'Although indian films may not be widely recognized in Brazil, I have developed a love for them after watching many of them. To showcase my favorites, I created a simple application using foundational concepts in React, which displays a list of my favorite Bollywood movies.',
+    description: 'Os filmes indianos não são muito conhecidos aqui no Brasil, mas eu já assisti vários e adoro! Então, criei uma aplicação bem simples utilizando conceitos básicos de React para renderizar uma lista de filmes que estão na minha lista de favoritos!',
+    image: BestIndianMovies,
+    page: 'https://joanamds.github.io/best-indian-movies/',
+    repo: 'https://github.com/joanamds/best-indian-movies',
   },
   {
     title: 'Disney Characters',
@@ -116,6 +117,14 @@ export const personalProjects = [
     image: DisneyCharacters,
     page: 'https://joanamds.github.io/disney-characters/',
     repo: 'https://github.com/joanamds/disney-characters',
+  },
+  {
+    title: 'Escolas de Samba',
+    descriptionENG: 'This API collects information on Samba schools from two distinct groups in São Paulo and Rio de Janeiro, providing details such as the name, year of establishment, city, and group affiliation for each school.',
+    description: 'Aqui está uma API que junta as informações das escolas de samba de São Paulo(Grupo Especial e Grupo de Acesso 1) e do Rio de Janeiro (Grupo Especial e Série Ouro) incluindo: Nome, fundação, cidade e grupo de cada uma.',
+    image: EscolasDeSamba,
+    page: null,
+    repo: 'https://github.com/joanamds/escolas-de-samba',
   },
 ];
 
