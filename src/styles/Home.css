@@ -38,12 +38,12 @@
   color: whitesmoke;
 }
 
-.home-page h1 {
+/* .home-page h1 {
   font-family: 'Gochi Hand', cursive;
   font-size: 50px;
   color: #7c4887;
   text-align: center;
-}
+} */
 
 .buttons-container {
   display: flex;

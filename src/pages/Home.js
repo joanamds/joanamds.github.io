@@ -4,6 +4,7 @@ import '../styles/Home.css';
 import developer from '../images/girl-dev.png';
 import { useHistory } from 'react-router-dom';
 import LanguageContext from '../context/LanguageContext';
+import '../styles/Title.scss'
 
 function Home() {
   const history = useHistory();
@@ -13,10 +14,12 @@ function Home() {
     <div className="home-page">
       <Header />
       <div className="home-container">
-        <h1>Hello World!</h1>
+        <div className="typewriter">
+          <h1>{isEnglish ? 'Hello World! My name is Joana' : 'Hello World! Meu nome é Joana'}</h1>
+        </div>
         <h2>{isEnglish
-          ? 'My name is Joana and I am a web development student'
-          : 'Meu nome é Joana e sou estudante de desenvolvimento web!'}</h2>
+          ? 'I am a full stack developer'
+          : 'Sou desenvolvedora full stack'}</h2>
         <div className="image-container">
           <img src={developer} alt="female developer" width="500" className="image-developer" />
         </div>
@@ -33,12 +36,12 @@ function Home() {
           >
             <span>{isEnglish ? 'Projects' : 'Projetos'}</span>
           </button>
-          <button
+          {/* <button
             className="button-home"
             onClick={() => history.push('/tools')}
           >
             <span>{isEnglish ? 'Tools and technologies' : 'Tecnologias e ferramentas'}</span>
-          </button>
+          </button> */}
           <button
             className="button-home"
             onClick={() => history.push('/contact')}
