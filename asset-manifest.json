@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c90b272b.css",
-    "main.js": "/static/js/main.9b9a4e5d.js",
+    "main.js": "/static/js/main.8bafc374.js",
     "static/media/solar-system.png": "/static/media/solar-system.49bad0dced99f6bd9529.png",
     "static/media/disney-characters.png": "/static/media/disney-characters.59b4cca99de563fefd5b.png",
     "static/media/best-indian-movies.png": "/static/media/best-indian-movies.8c64d4ce64d93a002879.png",
@@ -21,10 +21,10 @@
     "static/media/united-kingdom-flag-icon.svg": "/static/media/united-kingdom-flag-icon.8411a74a2d01099b9cd827dcba16a600.svg",
     "index.html": "/index.html",
     "main.c90b272b.css.map": "/static/css/main.c90b272b.css.map",
-    "main.9b9a4e5d.js.map": "/static/js/main.9b9a4e5d.js.map"
+    "main.8bafc374.js.map": "/static/js/main.8bafc374.js.map"
   },
   "entrypoints": [
     "static/css/main.c90b272b.css",
-    "static/js/main.9b9a4e5d.js"
+    "static/js/main.8bafc374.js"
   ]
 }
