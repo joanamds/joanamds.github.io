@@ -42,20 +42,19 @@
   width: 1000px;
 }
 
-/* .App__Dark .title-name {
+.App__Dark .aboutme-page h1 {
   margin-top: 0px;
   padding: 20px;
-  color: whitesmoke;
-  font-family: 'Gochi Hand', cursive;
-  color: #7c4887;
+  color: white;
+  font-family: monospace, cursive;
 }
 
-.App__Light .title-name {
+.App__Light .aboutme-page h1 {
   margin-top: 0px;
   padding: 20px;
-  font-family: 'Gochi Hand', cursive;
-  color: #7c4887;
-} */
+  font-family: monospace, cursive;
+  color: black;
+}
 
 .App__Light .subtitle-who {
   padding: 20px;

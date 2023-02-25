@@ -1,17 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap') ;
-
-/* .App__Dark .projects-page h1 {
-  font-family: 'Gochi Hand', cursive;
+.App__Dark .projects-page h1 {
+  font-family: 'monospace', cursive;
   margin-top: 20px;
   text-align: center;
   color: white;
-} */
+}
 
-/* .App__Light .projects-page h1 {
-  font-family: 'Gochi Hand', cursive;
+.App__Light .projects-page h1 {
+  font-family: 'monospace', cursive;
   margin-top: 20px;
   text-align: center;
-} */
+}
 
 .App__Light .carousel-container {
   margin: auto;

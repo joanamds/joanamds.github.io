@@ -38,9 +38,7 @@ function Projects() {
     <div className="projects-page">
       <Header />
       <div className="carousel-container">
-      <div className="typewriter">
-        <h1>{isEnglish ? 'These are my projects' : 'Estes são meus projetos'}</h1>
-      </div>
+      <h1>{isEnglish ? 'Projects' : 'Projetos'}</h1>
       <Dropdown className="dropdown-css">
         <Dropdown.Toggle variant={ isDarkTheme ? 'dark' : 'light' } id="dropdown-basic">
           {isEnglish ? 'Module' : 'Módulo'}
