@@ -1,7 +1,7 @@
-import { ButtonGroup, Button, Dropdown } from 'react-bootstrap';
+import { ButtonGroup, Dropdown } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
-import { FaArrowLeft, FaHome, FaPhone } from 'react-icons/fa';
+import { FaArrowLeft, FaHome } from 'react-icons/fa';
 import { BsMoonFill, BsSunFill } from 'react-icons/bs';
 import { useHistory } from 'react-router-dom';
 import '../styles/Header.css';
@@ -11,7 +11,6 @@ import { readTheme, saveTheme } from '../services/localStorage';
 import LanguageContext from '../context/LanguageContext';
 import Bra from '../images/brazil-flag-icon.svg';
 import UK from '../images/united-kingdom-flag-icon.svg';
-
 
 function Header() {
   const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext);

@@ -1,19 +1,17 @@
 .App__Dark .projects-page h1 {
   font-family: 'monospace', cursive;
-  margin-top: 20px;
   text-align: center;
   color: white;
 }
 
 .App__Light .projects-page h1 {
   font-family: 'monospace', cursive;
-  margin-top: 20px;
   text-align: center;
 }
 
 .App__Light .carousel-container {
   margin: auto;
-  margin-top: 50px;
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,7 +21,7 @@
 
 .App__Dark .carousel-container {
   margin: auto;
-  margin-top: 50px;
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
