@@ -52,7 +52,7 @@
 
 .App__Dark .button-home {
   color: white;
-  background-color: black;
+  background-color: #181818;
   border: 3px solid transparent;
   border-radius: 5px;
   border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);

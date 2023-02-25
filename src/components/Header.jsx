@@ -1,4 +1,4 @@
-import { ButtonGroup, Button } from 'react-bootstrap';
+import { ButtonGroup, Button, Dropdown } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import { FaArrowLeft, FaHome, FaPhone } from 'react-icons/fa';
@@ -42,38 +42,35 @@ function Header() {
         <Navbar.Brand>
           Portfolio
         </Navbar.Brand>
-        <Button
-          variant={isDarkTheme ? "dark" : "light"}
-          onClick={() => setIsEnglish(false)}
-          disabled={ !isEnglish }
-        >
-          <img src={Bra} alt="brazil flag" width="30" />
-          Português(BRA)
-          <span className="tooltiptext">Português(BRA)</span>
-        </Button>
-        <Button
-          variant={isDarkTheme ? "dark" : "light"}
-          onClick={() => setIsEnglish(true)}
-          disabled={ isEnglish }
-        >
-          <img src={UK} alt="UK flag" width="30" />
-          English
-          <span className="tooltiptext">English</span>
-        </Button>
+        <Dropdown className="dropdown-css">
+        <Dropdown.Toggle variant={ isDarkTheme ? 'dark' : 'light' } id="dropdown-basic">
+          Language
+        </Dropdown.Toggle>
+        <Dropdown.Menu>
+          <Dropdown.Item onClick={() => setIsEnglish(true)}>
+            <img src={UK} alt="UK flag" width="30" />
+              English
+          </Dropdown.Item>
+            <Dropdown.Item onClick={() => setIsEnglish(false)} >
+              <img src={Bra} alt="brazil flag" width="30" />
+                Português(BRA)
+          </Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
         <ButtonGroup
           variant="theme"
           onClick={ toggleTheme }
         >
           {isDarkTheme && (
             <>
-              <BsSunFill style={ { color: 'yellow' } } />
+              <BsSunFill style={ { color: 'white' } } />
               <span className="tooltiptext">{ isEnglish ? 'Light theme' : 'Ativar modo claro'}</span>
             </>
           )}
           {!isDarkTheme
             && (
             <>
-              <BsMoonFill style={{ color: 'blue' }} />
+              <BsMoonFill style={{ color: 'black' }} />
               <span className="tooltiptext">{ isEnglish ? 'Dark theme' : 'Ativar modo escuro'}</span>
             </>
             )}

@@ -5,7 +5,14 @@
 }
 
 .App__Dark {
-  background-color: black;
+  background-color: #181818;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App__Light {
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

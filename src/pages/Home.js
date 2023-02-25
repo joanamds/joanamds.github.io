@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import Header from '../components/Header';
 import '../styles/Home.css';
-import developer from '../images/girl-dev.png';
+import developer from '../images/cat-computer.gif';
 import { useHistory } from 'react-router-dom';
 import LanguageContext from '../context/LanguageContext';
 import '../styles/Title.scss'
