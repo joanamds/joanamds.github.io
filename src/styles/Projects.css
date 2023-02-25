@@ -1,10 +1,12 @@
 .App__Dark .projects-page h1 {
   font-family: 'monospace', cursive;
+  font-size: 30px;
   text-align: center;
   color: white;
 }
 
 .App__Light .projects-page h1 {
+  font-size: 30px;
   font-family: 'monospace', cursive;
   text-align: center;
 }
@@ -15,7 +17,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 50px;
+  padding: 20px;
   width: 1000px;
 }
 
@@ -25,7 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 50px;
+  padding: 20px;
   width: 1000px;
 }
 
@@ -69,6 +71,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
