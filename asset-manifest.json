@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.cd59b3dd.css",
-    "main.js": "/static/js/main.de4b7602.js",
+    "main.css": "/static/css/main.9bd4a4d0.css",
+    "main.js": "/static/js/main.816020a9.js",
     "static/media/solar-system.png": "/static/media/solar-system.49bad0dced99f6bd9529.png",
     "static/media/disney-characters.png": "/static/media/disney-characters.59b4cca99de563fefd5b.png",
     "static/media/best-indian-movies.png": "/static/media/best-indian-movies.8c64d4ce64d93a002879.png",
@@ -20,11 +20,11 @@
     "static/media/todo-list.png": "/static/media/todo-list.7eab4074412b48ac2854.png",
     "static/media/united-kingdom-flag-icon.svg": "/static/media/united-kingdom-flag-icon.8411a74a2d01099b9cd827dcba16a600.svg",
     "index.html": "/index.html",
-    "main.cd59b3dd.css.map": "/static/css/main.cd59b3dd.css.map",
-    "main.de4b7602.js.map": "/static/js/main.de4b7602.js.map"
+    "main.9bd4a4d0.css.map": "/static/css/main.9bd4a4d0.css.map",
+    "main.816020a9.js.map": "/static/js/main.816020a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd59b3dd.css",
-    "static/js/main.de4b7602.js"
+    "static/css/main.9bd4a4d0.css",
+    "static/js/main.816020a9.js"
   ]
 }
