@@ -5,12 +5,12 @@
 
 .App__Light .btn-group {
   cursor: pointer;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .App__Dark .btn-group {
   cursor: pointer;
-  font-size: 30px;
+  font-size: 24px;
   color: white;
 }
 

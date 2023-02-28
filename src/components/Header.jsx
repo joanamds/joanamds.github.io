@@ -60,17 +60,17 @@ function Header() {
           variant="theme"
           onClick={ toggleTheme }
         >
-          {isDarkTheme && (
+          {!isDarkTheme && (
             <>
-              <BsSunFill style={ { color: 'white' } } />
-              <span className="tooltiptext">{ isEnglish ? 'Light theme' : 'Ativar modo claro'}</span>
+              <BsSunFill style={ { color: 'black', fontSize: 20} } />
+              <span className="tooltiptext">{ isEnglish ? 'Light theme' : 'Ativar modo escuro'}</span>
             </>
           )}
-          {!isDarkTheme
+          {isDarkTheme
             && (
             <>
-              <BsMoonFill style={{ color: 'black' }} />
-              <span className="tooltiptext">{ isEnglish ? 'Dark theme' : 'Ativar modo escuro'}</span>
+              <BsMoonFill style={{ color: 'white', fontSize: 20 }} />
+              <span className="tooltiptext">{ isEnglish ? 'Dark theme' : 'Ativar modo claro'}</span>
             </>
             )}
         </ButtonGroup>
