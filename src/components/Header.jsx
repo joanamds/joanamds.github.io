@@ -63,14 +63,14 @@ function Header() {
           {!isDarkTheme && (
             <>
               <BsSunFill style={ { color: 'black', fontSize: 20} } />
-              <span className="tooltiptext">{ isEnglish ? 'Light theme' : 'Ativar modo escuro'}</span>
+              <span className="tooltiptext">{ isEnglish ? 'Dark theme' : 'Ativar modo escuro'}</span>
             </>
           )}
           {isDarkTheme
             && (
             <>
               <BsMoonFill style={{ color: 'white', fontSize: 20 }} />
-              <span className="tooltiptext">{ isEnglish ? 'Dark theme' : 'Ativar modo claro'}</span>
+              <span className="tooltiptext">{ isEnglish ? 'Light theme' : 'Ativar modo claro'}</span>
             </>
             )}
         </ButtonGroup>
