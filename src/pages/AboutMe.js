@@ -4,6 +4,7 @@ import joana from '../images/joana-photo.jpeg';
 import Header from '../components/Header';
 import LanguageContext from '../context/LanguageContext';
 import Tools from '../components/Tools';
+import { FaUserGraduate, FaCode } from "react-icons/fa";
 
 function AboutMe() {
   const { isEnglish } = useContext(LanguageContext);
@@ -24,7 +25,14 @@ function AboutMe() {
         <img src={ joana } alt="imagem da Joana" className="joana-picture"/>
         </div>
       </div>
-      <Tools/>
+      <div className="education">
+        <h2>{isEnglish? 'Education' : 'Formação'}</h2>
+        <ul>
+          <li><FaUserGraduate /> 2017-2021: Pedagogia - Universidade do Estado de Santa Catarina</li>
+          <li><FaCode />  2022-: Desenvolvimento Web - Trybe</li>
+        </ul>
+      </div>
+      <Tools />
     </div>
   );
 }

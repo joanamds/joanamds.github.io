@@ -1,11 +1,11 @@
-ul {
+.my-tools ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-li {
+.my-tools li {
   font-size: 30px;
   margin-left: 30px;
   color: orange;
