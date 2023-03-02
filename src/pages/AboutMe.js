@@ -28,8 +28,8 @@ function AboutMe() {
       <div className="education">
         <h2>{isEnglish? 'Education' : 'Formação'}</h2>
         <ul>
-          <li><FaUserGraduate /> 2017-2021: Pedagogia - Universidade do Estado de Santa Catarina</li>
-          <li><FaCode />  2022-: Desenvolvimento Web - Trybe</li>
+          <li><FaUserGraduate /> 2017-2021: { isEnglish ? 'Pedagogy' : 'Pedagogia' } - Universidade do Estado de Santa Catarina</li>
+          <li><FaCode />  2022-: {isEnglish? 'Web Development' : 'Desenvolvimento Web'} - Trybe</li>
         </ul>
       </div>
       <Tools />
