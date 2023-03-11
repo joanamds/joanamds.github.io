@@ -67,9 +67,16 @@
   opacity: 0.6;
 }
 
-.btn-secondary:active {
+.App__Dark .btn-secondary:active {
   border-style: inset !important;
-  border-width: 1px;
+  border-width: 0.1px !important;
+  border-color: black !important;
+}
+
+.App__Light .btn-secondary:active {
+  border-style: inset !important;
+  border-width: 0.1px !important;
+  border-color: white !important;
 }
 
 .dropdown-css {

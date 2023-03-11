@@ -11,6 +11,7 @@ import BestIndianMovies from '../images/projects_images/best-indian-movies.png';
 import DisneyCharacters from '../images/projects_images/disney-characters.png';
 import StoreManager from '../images/projects_images/store-manager.png';
 import EscolasDeSamba from '../images/projects_images/escolas-de-samba.png';
+import BlogsAPI from '../images/projects_images/blogs-api.png';
 
 export const projectsFront = [
   {
@@ -83,10 +84,18 @@ export const projectsBack = [
   {
     title: 'Store Manager',
     descriptionENG: 'For this application we have to create an API that emulates  a stores inventory management system, including the storage and tracking of products and sales data.',
-    description: 'Para esta aplicação precisamos criar uma API que simulasse o funcionamento de uma loja, armazenando dados de produtos e de vendas.',
+    description: 'Nesse projeto foi preciso criar uma API que simulasse o funcionamento de uma loja, armazenando dados de produtos e de vendas.',
     image: StoreManager,
     page: null,
     repo: 'https://github.com/joanamds/store-manager',
+  },
+  {
+    title: 'Blogs API',
+    descriptionENG: 'In this project, it was necessary to develop an API to manage blog posts and associated users. It is possible to create, edit, and delete posts and users, as well as search for posts by name or content.',
+    description: 'Neste projeto foi preciso desenvolver uma API para gerenciar postagens de blog e usuários associados. É possível criar, editar e excluir postagens e usuários, além de buscar postagens por nome ou conteúdo.',
+    image: BlogsAPI,
+    page: null,
+    repo: 'https://github.com/joanamds/blogs_api',
   },
 ];
 
