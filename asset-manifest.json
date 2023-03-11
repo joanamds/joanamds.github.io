@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9bd4a4d0.css",
-    "main.js": "/static/js/main.816020a9.js",
+    "main.css": "/static/css/main.13bccc87.css",
+    "main.js": "/static/js/main.97847542.js",
     "static/media/solar-system.png": "/static/media/solar-system.49bad0dced99f6bd9529.png",
     "static/media/disney-characters.png": "/static/media/disney-characters.59b4cca99de563fefd5b.png",
     "static/media/best-indian-movies.png": "/static/media/best-indian-movies.8c64d4ce64d93a002879.png",
@@ -11,6 +11,7 @@
     "static/media/escolas-de-samba.png": "/static/media/escolas-de-samba.0c9aaaaf07ab240c65e1.png",
     "static/media/store-manager.png": "/static/media/store-manager.e18aad1441173706042e.png",
     "static/media/zoo-functions.png": "/static/media/zoo-functions.3d3c82bfbdc1211479d8.png",
+    "static/media/blogs-api.png": "/static/media/blogs-api.d3c1d47e4bc2a44de270.png",
     "static/media/trybetunes.png": "/static/media/trybetunes.c26f7ae98c41df43a0eb.png",
     "static/media/talker-manager.png": "/static/media/talker-manager.69729f29431447ec6f12.png",
     "static/media/joana-photo.jpeg": "/static/media/joana-photo.e03ca6be85a39290cdc3.jpeg",
@@ -20,11 +21,11 @@
     "static/media/todo-list.png": "/static/media/todo-list.7eab4074412b48ac2854.png",
     "static/media/united-kingdom-flag-icon.svg": "/static/media/united-kingdom-flag-icon.8411a74a2d01099b9cd827dcba16a600.svg",
     "index.html": "/index.html",
-    "main.9bd4a4d0.css.map": "/static/css/main.9bd4a4d0.css.map",
-    "main.816020a9.js.map": "/static/js/main.816020a9.js.map"
+    "main.13bccc87.css.map": "/static/css/main.13bccc87.css.map",
+    "main.97847542.js.map": "/static/js/main.97847542.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bd4a4d0.css",
-    "static/js/main.816020a9.js"
+    "static/css/main.13bccc87.css",
+    "static/js/main.97847542.js"
   ]
 }
