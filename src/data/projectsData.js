@@ -12,6 +12,7 @@ import DisneyCharacters from '../images/projects_images/disney-characters.png';
 import StoreManager from '../images/projects_images/store-manager.png';
 import EscolasDeSamba from '../images/projects_images/escolas-de-samba.png';
 import BlogsAPI from '../images/projects_images/blogs-api.png';
+import Trybesmith from '../images/projects_images/trybesmith.png';
 
 export const projectsFront = [
   {
@@ -88,6 +89,14 @@ export const projectsBack = [
     image: StoreManager,
     page: null,
     repo: 'https://github.com/joanamds/store-manager',
+  },
+  {
+    title: 'Trybesmith',
+    descriptionENG: 'First project using TypeScript! For this project, it was necessary to simulate a medieval products store by creating an API with endpoints to read and write to the database using MySQL.',
+    description: 'Primeiro projeto utilizando TypeScript! Para este projeto foi preciso simular uma loja de produtos medievais criando uma API com endpoints para ler e escrever no banco de dados utilizando MySQL.',
+    image: Trybesmith,
+    page: null,
+    repo: 'https://github.com/joanamds/trybesmith',
   },
   {
     title: 'Blogs API',
