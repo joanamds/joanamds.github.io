@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.13bccc87.css",
-    "main.js": "/static/js/main.97847542.js",
+    "main.js": "/static/js/main.eb37a9c8.js",
     "static/media/solar-system.png": "/static/media/solar-system.49bad0dced99f6bd9529.png",
     "static/media/disney-characters.png": "/static/media/disney-characters.59b4cca99de563fefd5b.png",
     "static/media/best-indian-movies.png": "/static/media/best-indian-movies.8c64d4ce64d93a002879.png",
@@ -15,6 +15,7 @@
     "static/media/trybetunes.png": "/static/media/trybetunes.c26f7ae98c41df43a0eb.png",
     "static/media/talker-manager.png": "/static/media/talker-manager.69729f29431447ec6f12.png",
     "static/media/joana-photo.jpeg": "/static/media/joana-photo.e03ca6be85a39290cdc3.jpeg",
+    "static/media/trybesmith.png": "/static/media/trybesmith.a655144d8e1952d0eca7.png",
     "static/media/one-for-all.png": "/static/media/one-for-all.e744bebe260e3c3bf30b.png",
     "static/media/trybewallet.png": "/static/media/trybewallet.e0c09a5bef7c65d1e594.png",
     "static/media/brazil-flag-icon.svg": "/static/media/brazil-flag-icon.dd2dd21d0015bb8443ba2217a198d7bf.svg",
@@ -22,10 +23,10 @@
     "static/media/united-kingdom-flag-icon.svg": "/static/media/united-kingdom-flag-icon.8411a74a2d01099b9cd827dcba16a600.svg",
     "index.html": "/index.html",
     "main.13bccc87.css.map": "/static/css/main.13bccc87.css.map",
-    "main.97847542.js.map": "/static/js/main.97847542.js.map"
+    "main.eb37a9c8.js.map": "/static/js/main.eb37a9c8.js.map"
   },
   "entrypoints": [
     "static/css/main.13bccc87.css",
-    "static/js/main.97847542.js"
+    "static/js/main.eb37a9c8.js"
   ]
 }
