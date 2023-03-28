@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.13bccc87.css",
-    "main.js": "/static/js/main.eb37a9c8.js",
+    "main.js": "/static/js/main.dc30b2fe.js",
     "static/media/solar-system.png": "/static/media/solar-system.49bad0dced99f6bd9529.png",
     "static/media/disney-characters.png": "/static/media/disney-characters.59b4cca99de563fefd5b.png",
+    "static/media/trybers-and-dragons.png": "/static/media/trybers-and-dragons.27f22c458454276ccaf8.png",
     "static/media/best-indian-movies.png": "/static/media/best-indian-movies.8c64d4ce64d93a002879.png",
     "static/media/cat-computer.gif": "/static/media/cat-computer.6bff444d95e3d9468485.gif",
     "static/media/online-store.png": "/static/media/online-store.e7e88a6e3fd032e00278.png",
@@ -23,10 +24,10 @@
     "static/media/united-kingdom-flag-icon.svg": "/static/media/united-kingdom-flag-icon.8411a74a2d01099b9cd827dcba16a600.svg",
     "index.html": "/index.html",
     "main.13bccc87.css.map": "/static/css/main.13bccc87.css.map",
-    "main.eb37a9c8.js.map": "/static/js/main.eb37a9c8.js.map"
+    "main.dc30b2fe.js.map": "/static/js/main.dc30b2fe.js.map"
   },
   "entrypoints": [
     "static/css/main.13bccc87.css",
-    "static/js/main.eb37a9c8.js"
+    "static/js/main.dc30b2fe.js"
   ]
 }
