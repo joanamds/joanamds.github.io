@@ -13,6 +13,7 @@ import StoreManager from '../images/projects_images/store-manager.png';
 import EscolasDeSamba from '../images/projects_images/escolas-de-samba.png';
 import BlogsAPI from '../images/projects_images/blogs-api.png';
 import Trybesmith from '../images/projects_images/trybesmith.png';
+import TrybersAndDragons from '../images/projects_images/trybers-and-dragons.png';
 
 export const projectsFront = [
   {
@@ -91,6 +92,14 @@ export const projectsBack = [
     repo: 'https://github.com/joanamds/store-manager',
   },
   {
+    title: 'Blogs API',
+    descriptionENG: 'In this project, it was necessary to develop an API to manage blog posts and associated users. It is possible to create, edit, and delete posts and users, as well as search for posts by name or content.',
+    description: 'Neste projeto foi preciso desenvolver uma API para gerenciar postagens de blog e usuários associados. É possível criar, editar e excluir postagens e usuários, além de buscar postagens por nome ou conteúdo.',
+    image: BlogsAPI,
+    page: null,
+    repo: 'https://github.com/joanamds/blogs_api',
+  },
+  {
     title: 'Trybesmith',
     descriptionENG: 'First project using TypeScript! For this project, it was necessary to simulate a medieval products store by creating an API with endpoints to read and write to the database using MySQL.',
     description: 'Primeiro projeto utilizando TypeScript! Para este projeto foi preciso simular uma loja de produtos medievais criando uma API com endpoints para ler e escrever no banco de dados utilizando MySQL.',
@@ -99,12 +108,12 @@ export const projectsBack = [
     repo: 'https://github.com/joanamds/trybesmith',
   },
   {
-    title: 'Blogs API',
-    descriptionENG: 'In this project, it was necessary to develop an API to manage blog posts and associated users. It is possible to create, edit, and delete posts and users, as well as search for posts by name or content.',
-    description: 'Neste projeto foi preciso desenvolver uma API para gerenciar postagens de blog e usuários associados. É possível criar, editar e excluir postagens e usuários, além de buscar postagens por nome ou conteúdo.',
-    image: BlogsAPI,
+    title: 'Trybers And Dragons',
+    descriptionENG: 'In this project, we were challenged to create an RPG game simulation using Object-Oriented Programming and SOLID principles.',
+    description: 'Neste projeto fomos desafiados a criar uma simulação de jogo de RPG utilizando Programação Orientada a Objetos e SOLID.',
+    image: TrybersAndDragons,
     page: null,
-    repo: 'https://github.com/joanamds/blogs_api',
+    repo: 'https://github.com/joanamds/trybers-and-dragons',
   },
 ];
 
