@@ -1,4 +1,4 @@
-# :file_folder: Meu Portfólio :file_folder:
+# :file_folder: Meu Portfólio
 
 Este portfólio foi criado com React, utilizando React Hooks para controle de estado.
 
