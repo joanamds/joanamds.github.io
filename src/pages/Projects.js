@@ -3,7 +3,8 @@ import Header from '../components/Header';
 import Carousel from 'react-bootstrap/Carousel';
 import Dropdown from 'react-bootstrap/Dropdown';
 import '../styles/Projects.css'
-import { projectsFront, projectsBack, projectsFundamentals, personalProjects } from '../data/projectsData';
+import { projectsBack } from '../data/backendProjects';
+import { projectsFront, projectsFundamentals, personalProjects } from '../data/projectsData';
 import ProjectCard from '../components/ProjectCard';
 import ThemeContext from '../context/ThemeContext';
 import LanguageContext from '../context/LanguageContext';
