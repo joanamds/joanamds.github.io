@@ -4,7 +4,7 @@ import {
   SiBootstrap, SiCss3, SiEslint, SiGit, SiGithub, SiHtml5,
   SiJavascript, SiJest, SiMaterialui, SiMysql, SiNodedotjs, SiReact, SiRedux,
   SiTailwindcss,
-  SiTestinglibrary, SiTrello
+  SiTestinglibrary, SiTrello, SiTypescript, SiDocker, SiSequelize, SiJsonwebtokens
 } from "react-icons/si";
 import LanguageContext from '../context/LanguageContext';
 import '../styles/ToolsList.css';
@@ -20,7 +20,6 @@ function Tools() {
         <li><SiCss3 /></li>
         <li><SiJavascript /></li>
         <li><SiHtml5 /></li>
-        <li><SiBootstrap/></li>
         <li><SiGit /></li>
         <li><SiGithub /></li>
         <li><SiJest /></li>
@@ -29,10 +28,16 @@ function Tools() {
         <li><SiTrello /></li>
         <li><SiEslint /></li>
         <li><SiRedux /></li>
-        <li><SiMysql /></li>
-        <li><SiNodedotjs /></li>
+        <li><SiBootstrap/></li>
         <li><SiTailwindcss /></li>
         <li><SiMaterialui /></li>
+        <li><SiMysql /></li>
+        <li><SiNodedotjs /></li>
+        <li><SiTypescript /></li>
+        <li><SiDocker /></li>
+        <li><SiSequelize /></li>
+        <li><SiJsonwebtokens /></li>
+        {/* <li><SiMongodb /></li> */}
       </ul>
     </div>
   );

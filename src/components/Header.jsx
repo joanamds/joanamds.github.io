@@ -43,7 +43,7 @@ function Header() {
         </Navbar.Brand>
         <Dropdown className="dropdown-css">
         <Dropdown.Toggle variant={ isDarkTheme ? 'dark' : 'light' } id="dropdown-basic">
-          Language
+          { isEnglish ? 'Language' : 'Idioma' }
         </Dropdown.Toggle>
         <Dropdown.Menu>
           <Dropdown.Item onClick={() => setIsEnglish(true)}>
