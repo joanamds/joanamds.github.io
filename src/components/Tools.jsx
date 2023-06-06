@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import {
   SiBootstrap, SiCss3, SiEslint, SiGit, SiGithub, SiHtml5,
   SiJavascript, SiJest, SiMaterialui, SiMysql, SiNodedotjs, SiReact, SiRedux,
-  SiTailwindcss,
+  SiTailwindcss, SiMongodb,
   SiTestinglibrary, SiTrello, SiTypescript, SiDocker, SiSequelize, SiJsonwebtokens
 } from "react-icons/si";
 import LanguageContext from '../context/LanguageContext';
