@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.13bccc87.css",
-    "main.js": "/static/js/main.a194f2f4.js",
+    "main.js": "/static/js/main.ce13a31a.js",
     "static/media/solar-system.png": "/static/media/solar-system.49bad0dced99f6bd9529.png",
     "static/media/disney-characters.png": "/static/media/disney-characters.59b4cca99de563fefd5b.png",
     "static/media/trybers-and-dragons.png": "/static/media/trybers-and-dragons.27f22c458454276ccaf8.png",
@@ -25,10 +25,10 @@
     "static/media/united-kingdom-flag-icon.svg": "/static/media/united-kingdom-flag-icon.8411a74a2d01099b9cd827dcba16a600.svg",
     "index.html": "/index.html",
     "main.13bccc87.css.map": "/static/css/main.13bccc87.css.map",
-    "main.a194f2f4.js.map": "/static/js/main.a194f2f4.js.map"
+    "main.ce13a31a.js.map": "/static/js/main.ce13a31a.js.map"
   },
   "entrypoints": [
     "static/css/main.13bccc87.css",
-    "static/js/main.a194f2f4.js"
+    "static/js/main.ce13a31a.js"
   ]
 }
