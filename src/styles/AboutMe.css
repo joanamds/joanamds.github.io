@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') ;
-
-* {
-  font-family: Epilogue , sans-serif;
-}
+@import url('https://fonts.cdnfonts.com/css/itc-avant-garde-pro-md') ;
 
 .App__Light .about-container {
   align-items: center;
@@ -64,16 +60,8 @@
   width: 500px;
 }
 
-.App__Dark .joana-picture {
+.joana-picture {
   width: 400px;
-  border-radius: 50%;
-  border: 5px solid #E0218A;
-}
-
-.App__Light .joana-picture {
-  width: 400px;
-  border-radius: 50%;
-  border: 5px solid #E0218A;
 }
 
 .education h2 {
@@ -96,4 +84,22 @@
   color: #E0218A;
   text-align: left;
   font-size: 16px;
+}
+
+.photo-title {
+  font-family: 'ITC Avant Garde Pro Md' , sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+path {
+  fill: transparent;
+}
+
+.App__Dark text {
+  fill: white;
+}
+
+.App__Light text {
+  fill: black;
 }

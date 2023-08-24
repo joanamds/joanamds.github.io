@@ -3,7 +3,6 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import {  FaPaste, FaPhoneAlt, FaPortrait, FaTools } from 'react-icons/fa';
 import { BsMoonFill, BsSunFill } from 'react-icons/bs';
-import { useHistory } from 'react-router-dom';
 import '../styles/Header.css';
 import { useContext, useEffect, useState } from 'react';
 import ThemeContext from '../context/ThemeContext';
@@ -13,11 +12,11 @@ import Bra from '../images/brazil-flag-icon.svg';
 import UK from '../images/united-kingdom-flag-icon.svg';
 import { Button, Modal} from 'react-bootstrap';
 import Contact from './ContactModal';
+import Nav from 'react-bootstrap/Nav';
 
 function Header() {
   const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext);
   const { isEnglish, setIsEnglish } = useContext(LanguageContext);
-  const history = useHistory();
 
   const [isShow, invokeModal] = useState(false)
 
@@ -41,18 +40,21 @@ function Header() {
   return (
       <Navbar bg={ isDarkTheme? 'dark' : 'light'} className="header-container">
       <Container>
-          <ButtonGroup onClick={ () => history.goBack() }>
+          <Nav.Link href="#aboutme">
             <FaPortrait />
+            Sobre mim
             <span className="tooltiptext">{ isEnglish ? 'About Me' : 'Sobre mim'}</span>
-          </ButtonGroup>
-        <ButtonGroup onClick={() => history.push('/')}>
+          </Nav.Link>
+        <Nav.Link href="#tools">
+          Tecnologias e Ferramentas
           <FaTools />
           <span className="tooltiptext">{ isEnglish ? 'Tools and Technologies' : 'Tecnologias e Ferramentas'}</span>
-        </ButtonGroup>
-        <ButtonGroup onClick={() => history.push('/')}>
+        </Nav.Link>
+        <Nav.Link href="#projects">
+          Projetos
           <FaPaste />
           <span className="tooltiptext">{ isEnglish ? 'Projects' : 'Projetos'}</span>
-        </ButtonGroup>
+        </Nav.Link>
         <Modal show={isShow}>
             <Modal.Header closeButton onClick={initModal}>
               <Modal.Title>{isEnglish ? 'Contact' : 'Contato'}</Modal.Title>
@@ -69,10 +71,10 @@ function Header() {
         <Navbar.Brand>
           Portfolio
         </Navbar.Brand>
-        <ButtonGroup onClick={ initModal }>
+        <Nav.Link onClick={ initModal }>
           <FaPhoneAlt />
           <span className="tooltiptext">{ isEnglish ? 'Contact' : 'Contato'}</span>
-        </ButtonGroup>
+        </Nav.Link>
         <Dropdown className="dropdown-css">
         <Dropdown.Toggle variant={ isDarkTheme ? 'dark' : 'light' } id="dropdown-basic">
           { isEnglish ? 'Language' : 'Idioma' }
@@ -95,6 +97,7 @@ function Header() {
           {!isDarkTheme && (
             <>
               <BsSunFill style={ { color: 'black', fontSize: 20} } />
+              Dark theme
               <span className="tooltiptext">{ isEnglish ? 'Dark theme' : 'Ativar modo escuro'}</span>
             </>
           )}
@@ -102,6 +105,7 @@ function Header() {
             && (
             <>
               <BsMoonFill style={{ color: 'white', fontSize: 20 }} />
+              <p style={{ color: 'white'}}>Light theme</p>
               <span className="tooltiptext">{ isEnglish ? 'Light theme' : 'Ativar modo claro'}</span>
             </>
             )}

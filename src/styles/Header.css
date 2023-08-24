@@ -4,19 +4,23 @@
   background-color:  #FACDE5 !important;
 }
 
+.bg-dark {
+  background-color: #71003a !important;
+}
+
 .navbar-brand {
   font-family: 'Bartex', cursive;
   font-size: 50px !important;
   color: #E0218A !important;
 }
 
-.btn-group {
+.nav-link {
   cursor: pointer;
   font-size: 24px;
   color: #ED5C9B !important;
 }
 
-.btn-group:hover {
+.nav-link:hover {
   color: #E0218A !important;
 }
 
@@ -37,7 +41,7 @@
   z-index: 1;
 }
 
-.btn-group:hover .tooltiptext {
+.nav-link:hover .tooltiptext {
   visibility: visible;
   width: 120px;
   top: 100%;
@@ -45,19 +49,19 @@
   margin-left: -60px;
 }
 
-.btn-dark {
+.nav-link {
   font-size: 14px !important;
 }
 
-.btn-dark:hover {
+.nav-link:hover {
   border-color: #E0218A !important;
 }
 
-.btn-dark:disabled {
+.nav-link:disabled {
   border-color: gray !important;
 }
 
-.btn-light {
+.nav-link {
   font-size: 14px !important;
 }
 

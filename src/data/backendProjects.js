@@ -15,7 +15,7 @@ export const projectsBack = [
     description: 'O objetivo do projeto foi dockerizar a aplicação Todo App que já estava pronta. Para isso desenvolvemos arquivos Dockerfile e um arquivo docker-compose.',
     image: TodoList,
     page: null,
-    repo: 'https://github.com/joanamds/projeto-solar-system',
+    repo: 'https://github.com/joanamds/projeto-docker-todo-list',
   },
   {
     title: 'All For One',
