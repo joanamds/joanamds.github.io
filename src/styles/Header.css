@@ -1,21 +1,23 @@
+@import url('https://fonts.cdnfonts.com/css/bartex');
+
+.bg-light {
+  background-color:  #FACDE5 !important;
+}
+
 .navbar-brand {
-  font-family: 'monospace', cursive;
-  font-size: 30px;
+  font-family: 'Bartex', cursive;
+  font-size: 50px !important;
+  color: #E0218A !important;
 }
 
-.App__Light .btn-group {
+.btn-group {
   cursor: pointer;
   font-size: 24px;
-}
-
-.App__Dark .btn-group {
-  cursor: pointer;
-  font-size: 24px;
-  color: white;
+  color: #ED5C9B !important;
 }
 
 .btn-group:hover {
-  color: gray;
+  color: #E0218A !important;
 }
 
 .App__Dark .navbar-brand{
@@ -48,7 +50,7 @@
 }
 
 .btn-dark:hover {
-  border-color: orange !important;
+  border-color: #E0218A !important;
 }
 
 .btn-dark:disabled {
@@ -60,7 +62,7 @@
 }
 
 .btn-light:hover {
-  border-color: orange !important;
+  border-color: #E0218A !important;
 }
 
 .btn-light:disabled {

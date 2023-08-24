@@ -1,5 +1,4 @@
 import React, { useContext, useEffect, useState } from 'react';
-import Header from '../components/Header';
 import Carousel from 'react-bootstrap/Carousel';
 import Dropdown from 'react-bootstrap/Dropdown';
 import '../styles/Projects.css'
@@ -36,10 +35,11 @@ function Projects() {
   });
 
   return (
-    <div className="projects-page">
-      <Header />
+    <div className="projects-page" id="projects">
       <div className="carousel-container">
-      <h1>{isEnglish ? 'Projects' : 'Projetos'}</h1>
+        <div className="typewriter">
+      <h1>{isEnglish ? 'Developed projects' : 'Projetos desenvolvidos'}</h1>
+      </div>
       <Dropdown className="dropdown-css">
         <Dropdown.Toggle variant={ isDarkTheme ? 'dark' : 'light' } id="dropdown-basic">
           {isEnglish ? 'Module' : 'Módulo'}

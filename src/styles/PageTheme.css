@@ -1,0 +1,7 @@
+.App__Light {
+  background-color: white;
+}
+
+.App__Dark {
+  background-color: rgba(0, 0, 0, 0.915);
+}

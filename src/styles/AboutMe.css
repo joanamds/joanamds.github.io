@@ -4,20 +4,6 @@
   font-family: Epilogue , sans-serif;
 }
 
-.App__Dark {
-  background-color: #181818;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.App__Light {
-  background-color: white;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .App__Light .about-container {
   align-items: center;
   margin: auto;
@@ -81,19 +67,17 @@
 .App__Dark .joana-picture {
   width: 400px;
   border-radius: 50%;
-  border: none;
-  box-shadow: 0 4px 8px 0 rgba(239, 213, 171, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  border: 5px solid #E0218A;
 }
 
 .App__Light .joana-picture {
   width: 400px;
   border-radius: 50%;
-  border: none;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 5px solid #E0218A;
 }
 
 .education h2 {
-  color: orange;
+  color: #E0218A;
   font-size: 20px;
 }
 
@@ -109,7 +93,7 @@
 }
 
 .education li {
-  color: orange;
+  color: #E0218A;
   text-align: left;
   font-size: 16px;
 }
