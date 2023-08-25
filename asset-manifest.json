@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.13bccc87.css",
-    "main.js": "/static/js/main.ce13a31a.js",
+    "main.css": "/static/css/main.272e515d.css",
+    "main.js": "/static/js/main.3306dab5.js",
+    "static/media/joana-photo.svg": "/static/media/joana-photo.b2e8efa44665c68e6aac8610b6f9f3b4.svg",
     "static/media/solar-system.png": "/static/media/solar-system.49bad0dced99f6bd9529.png",
     "static/media/disney-characters.png": "/static/media/disney-characters.59b4cca99de563fefd5b.png",
+    "static/media/binary_code_background.png": "/static/media/binary_code_background.2651aef6a3c96a5416ef.png",
     "static/media/trybers-and-dragons.png": "/static/media/trybers-and-dragons.27f22c458454276ccaf8.png",
     "static/media/best-indian-movies.png": "/static/media/best-indian-movies.8c64d4ce64d93a002879.png",
-    "static/media/cat-computer.gif": "/static/media/cat-computer.6bff444d95e3d9468485.gif",
     "static/media/online-store.png": "/static/media/online-store.fc41a870167974acdf09.png",
+    "static/media/barbie-desenvolvedora.png": "/static/media/barbie-desenvolvedora.58cf8f7ee430d0a0d179.png",
     "static/media/all-for-one.png": "/static/media/all-for-one.003383a00e14212b0706.png",
     "static/media/escolas-de-samba.png": "/static/media/escolas-de-samba.0c9aaaaf07ab240c65e1.png",
     "static/media/store-manager.png": "/static/media/store-manager.e18aad1441173706042e.png",
     "static/media/zoo-functions.png": "/static/media/zoo-functions.3d3c82bfbdc1211479d8.png",
     "static/media/blogs-api.png": "/static/media/blogs-api.d3c1d47e4bc2a44de270.png",
     "static/media/talker-manager.png": "/static/media/talker-manager.69729f29431447ec6f12.png",
-    "static/media/joana-photo.jpeg": "/static/media/joana-photo.e03ca6be85a39290cdc3.jpeg",
+    "static/media/button-color.jpg": "/static/media/button-color.b3d2977c4c70471d6f8f.jpg",
     "static/media/tfc.png": "/static/media/tfc.8a78a1e47799362ebff6.png",
     "static/media/trybesmith.png": "/static/media/trybesmith.a655144d8e1952d0eca7.png",
     "static/media/trybetunes.png": "/static/media/trybetunes.8069b8c819e353311dd1.png",
@@ -24,11 +26,11 @@
     "static/media/todo-list.png": "/static/media/todo-list.7eab4074412b48ac2854.png",
     "static/media/united-kingdom-flag-icon.svg": "/static/media/united-kingdom-flag-icon.8411a74a2d01099b9cd827dcba16a600.svg",
     "index.html": "/index.html",
-    "main.13bccc87.css.map": "/static/css/main.13bccc87.css.map",
-    "main.ce13a31a.js.map": "/static/js/main.ce13a31a.js.map"
+    "main.272e515d.css.map": "/static/css/main.272e515d.css.map",
+    "main.3306dab5.js.map": "/static/js/main.3306dab5.js.map"
   },
   "entrypoints": [
-    "static/css/main.13bccc87.css",
-    "static/js/main.ce13a31a.js"
+    "static/css/main.272e515d.css",
+    "static/js/main.3306dab5.js"
   ]
 }
