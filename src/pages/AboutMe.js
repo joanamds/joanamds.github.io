@@ -20,15 +20,17 @@ function AboutMe() {
       </div>
       <div className="my-picture">
         <svg viewBox="0 0 500 105">
-  <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
-  <text x="0" y="0" width="700"> {/* Ajuste o tamanho da fonte aqui */}
-    <textPath alignmentBaseline="top" href="#curve" className="photo-title" startOffset="15%"> {/* Ajuste o valor de startOffset aqui */}
-      { isEnglish ? 'This Barbie is a Web Developer' : 'Essa Barbie é Desenvolvedora'}
-    </textPath>
-  </text>
-</svg>
+          <path id="curve"
+          d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97"
+          className="path-curve"
+          />
+          <text x="0" y="0" width="700"> {/* Ajuste o tamanho da fonte aqui */}
+            <textPath alignmentBaseline="top" href="#curve" className="photo-title" startOffset="15%"> {/* Ajuste o valor de startOffset aqui */}
+              { isEnglish ? 'This Barbie is a Web Developer' : 'Essa Barbie é Desenvolvedora'}
+            </textPath>
+          </text>
+      </svg>
 <img src={ joana } alt="foto de Joana Maria dos Santos" className="joana-picture"/>
-
         </div>
       </div>
       <div className="education">

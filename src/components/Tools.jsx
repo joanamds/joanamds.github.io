@@ -2,9 +2,9 @@ import React from 'react';
 import { useContext } from 'react';
 import {
   SiBootstrap, SiCss3, SiEslint, SiGit, SiGithub, SiHtml5,
-  SiJavascript, SiJest, SiMaterialdesign, SiMysql, SiNodedotjs, SiReact, SiRedux,
+  SiJavascript, SiJest, SiMysql, SiNodedotjs, SiReact, SiRedux,
   SiTailwindcss, SiMongodb,
-  SiTestinglibrary, SiTrello, SiTypescript, SiDocker, SiSequelize, SiJsonwebtokens, SiPython
+  SiTestinglibrary, SiTrello, SiTypescript, SiDocker, SiSequelize, SiJsonwebtokens, SiPython, SiMui
 } from "react-icons/si";
 import LanguageContext from '../context/LanguageContext';
 import '../styles/ToolsList.css';
@@ -29,7 +29,7 @@ function Tools() {
     { name: 'Redux', icon: <SiRedux /> },
     { name: 'Bootstrap', icon: <SiBootstrap /> },
     { name: 'Tailwind CSS', icon: <SiTailwindcss /> },
-    { name: 'Material-UI', icon: <SiMaterialdesign /> },
+    { name: 'Material UI', icon: <SiMui /> },
     { name: 'MySQL', icon: <SiMysql /> },
     { name: 'Node.js', icon: <SiNodedotjs /> },
     { name: 'TypeScript', icon: <SiTypescript /> },
@@ -47,7 +47,6 @@ function Tools() {
 
   return (
     <div className="my-tools" id="tools">
-      <hr />
       <div className="typewriter">
         <h1>{isEnglish ? 'Tools and technologies' : 'Tecnologias e ferramentas'}</h1>
       </div>

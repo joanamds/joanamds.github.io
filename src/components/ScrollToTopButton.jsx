@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
+import { FaArrowUp } from 'react-icons/fa';
 
 function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
@@ -36,7 +37,7 @@ function ScrollToTopButton() {
       className={`scroll-top-button ${isVisible ? 'show-scroll-button' : ''}`}
       onClick={scrollToTop}
     >
-      ^
+      <FaArrowUp className="scroll-arrow"/>
     </Button>
   );
 }

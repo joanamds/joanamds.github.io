@@ -1,15 +1,17 @@
 
 // font: https://codepen.io/geoffgraham/pen/jrWwWM
 /* DEMO-SPECIFIC STYLES */
+@import url('https://fonts.cdnfonts.com/css/itc-avant-garde-pro-md') ;
+
 .App__Dark .typewriter h1 {
   text-align: center;
   color: #fff;
-  font-family: monospace;
+  font-family: 'ITC Avant Garde Pro Md' , monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #E0218A; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin-top: 50px;
-  margin-bottom: 0 auto; /* Gives that scrolling effect as the typing happens */
+  margin-bottom: 50px; /* Gives that scrolling effect as the typing happens */
   margin-left: 0 auto; /* Gives that scrolling effect as the typing happens */
   margin-right: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
@@ -21,17 +23,17 @@
 .App__Light .typewriter h1 {
   text-align: center;
   color: black;
-  font-family: monospace;
+  font-family: 'ITC Avant Garde Pro Md' , monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid #E0218A; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin-top: 50px;
-  margin-bottom: 0 auto; /* Gives that scrolling effect as the typing happens */
+  margin-bottom: 50px; /* Gives that scrolling effect as the typing happens */
   margin-left: 0 auto; /* Gives that scrolling effect as the typing happens */
   margin-right: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(30, end),
+    typing 3.5s steps(10, end),
     blink-caret .5s step-end infinite;
 }
 

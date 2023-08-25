@@ -73,6 +73,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 150px;
 }
 
 .education ul {
@@ -92,7 +93,7 @@
   font-size: 20px;
 }
 
-path {
+.path-curve {
   fill: transparent;
 }
 
