@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap') ;
 
-.App__Light .home-container {
-  margin: auto;
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 50px;
-  width: 1000px;
+/* Defina a animação de fundo em movimento */
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0; /* Começa no topo da imagem */
+  }
+  100% {
+    background-position: 100% 0; /* Move a imagem até o final da largura */
+  }
 }
 
+/* Aplique a animação ao .home-container */
+.App__Light .home-container,
 .App__Dark .home-container {
+  background-image: url('../images/binary_code_background.png');
+  background-size: cover;
+  background-repeat: repeat;
   margin: auto;
   margin-top: 30px;
   border-radius: 15px;
@@ -19,7 +24,10 @@
   justify-content: space-between;
   padding: 50px;
   width: 1000px;
+  opacity: 0.8;
+  animation: moveBackground 30s linear infinite; /* Aplica a animação */
 }
+
 
 .image-container {
   display: flex;
