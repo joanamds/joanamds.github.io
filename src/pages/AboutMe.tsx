@@ -38,7 +38,7 @@ function AboutMe(): JSX.Element {
         <h2>{isEnglish? 'Education' : 'Formação'}</h2>
         <ul>
           <li><FaUserGraduate /> 2017-2021: { isEnglish ? 'Pedagogy' : 'Pedagogia' } - Universidade do Estado de Santa Catarina(UDESC)</li>
-          <li><FaCode />  2022-: {isEnglish? 'Web Development' : 'Desenvolvimento Web'} - Trybe</li>
+          <li><FaCode />  2022-2023: {isEnglish? 'Web Development' : 'Desenvolvimento Web'} - Trybe</li>
         </ul>
       </div>
     </div>
