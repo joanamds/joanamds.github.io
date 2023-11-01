@@ -10,10 +10,11 @@ import LanguageContext from '../context/LanguageContext';
 import '../styles/ToolsList.css';
 import { Table } from 'react-bootstrap';
 import ThemeContext from '../context/ThemeContext';
+import { LanguageContextType, ThemeContextType } from '../types/ContextTypes';
 
-function Tools() {
-  const { isEnglish } = useContext(LanguageContext);
-  const { isDarkTheme } = useContext(ThemeContext)
+function Tools(): JSX.Element {
+  const { isEnglish }: LanguageContextType = useContext(LanguageContext);
+  const { isDarkTheme }: ThemeContextType = useContext(ThemeContext)
 
   const tools = [
     { name: 'CSS3', icon: <SiCss3 /> },

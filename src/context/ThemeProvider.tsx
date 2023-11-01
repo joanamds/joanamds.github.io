@@ -1,7 +1,7 @@
-import { useState, useMemo } from 'react';
+import React, { useState, useMemo, PropsWithChildren } from 'react';
 import ThemeContext from './ThemeContext';
 
-function ThemeProvider({children}) {
+function ThemeProvider({children}: PropsWithChildren): JSX.Element {
   const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   const theme = useMemo(() => ({

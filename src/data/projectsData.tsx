@@ -1,13 +1,14 @@
-import SolarSystem from '../images/projects_images/solar-system.png';
-import Trybetunes from '../images/projects_images/trybetunes.png';
-import OnlineStore from '../images/projects_images/online-store.png';
-import TrybeWallet from '../images/projects_images/trybewallet.png';
-import ZooFunctions from '../images/projects_images/zoo-functions.png';
-import BestIndianMovies from '../images/projects_images/best-indian-movies.png';
-import DisneyCharacters from '../images/projects_images/disney-characters.png';
-import EscolasDeSamba from '../images/projects_images/escolas-de-samba.png';
+import { ProjectTypes } from '../types/DataTypes';
+const SolarSystem = require('../images/projects_images/solar-system.png');
+const Trybetunes = require('../images/projects_images/trybetunes.png');
+const OnlineStore = require('../images/projects_images/online-store.png');
+const TrybeWallet = require('../images/projects_images/trybewallet.png');
+const ZooFunctions = require('../images/projects_images/zoo-functions.png');
+const BestIndianMovies = require('../images/projects_images/best-indian-movies.png');
+const DisneyCharacters = require('../images/projects_images/disney-characters.png');
+const EscolasDeSamba = require('../images/projects_images/escolas-de-samba.png');
 
-export const projectsFront = [
+export const projectsFront: ProjectTypes[] = [
   {
     title: 'Solar System',
     descriptionENG: 'This is a page that renders the solar system planets and highlights notable space missions.',

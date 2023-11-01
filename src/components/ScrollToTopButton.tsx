@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Button from 'react-bootstrap/Button';
 import { FaArrowUp } from 'react-icons/fa';
 
-function ScrollToTopButton() {
+function ScrollToTopButton(): JSX.Element {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {

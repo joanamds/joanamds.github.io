@@ -1,12 +1,13 @@
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import '../styles/Projects.css';
 import { FaGithub, FaFileCode } from "react-icons/fa";
 import LanguageContext from '../context/LanguageContext';
+import { LanguageContextType } from '../types/ContextTypes';
 
-function ProjectCard({ projectName, projectImage, projectPage, projectRepo, projectDescription }) {
-  const { isEnglish } = useContext(LanguageContext);
+function ProjectCard({ projectName, projectImage, projectPage, projectRepo, projectDescription }): JSX.Element {
+  const { isEnglish }: LanguageContextType = useContext(LanguageContext);
   return (
     <Card style={{ width: '45rem' }}>
       <Card.Img variant="top" src={ projectImage } />

@@ -5,9 +5,10 @@ import { MdEmail } from "react-icons/md";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Button } from 'react-bootstrap';
 import LanguageContext from '../context/LanguageContext';
+import { LanguageContextType } from '../types/ContextTypes';
 
-function Contact() {
-  const { isEnglish } = useContext(LanguageContext);
+function Contact(): JSX.Element {
+  const { isEnglish }: LanguageContextType = useContext(LanguageContext);
 
   const emailClick = () => {
     copy('joanamdsantos1@gmail.com');

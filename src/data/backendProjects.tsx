@@ -1,14 +1,15 @@
-import BlogsAPI from '../images/projects_images/blogs-api.png';
-import Trybesmith from '../images/projects_images/trybesmith.png';
-import TrybersAndDragons from '../images/projects_images/trybers-and-dragons.png';
-import TFC from '../images/projects_images/tfc.png';
-import StoreManager from '../images/projects_images/store-manager.png';
-import TodoList from '../images/projects_images/todo-list.png';
-import AllForOne from '../images/projects_images/all-for-one.png';
-import OneForAll from '../images/projects_images/one-for-all.png';
-import TalkerManager from '../images/projects_images/talker-manager.png';
+import { ProjectTypes } from "../types/DataTypes";
+const BlogsAPI = require('../images/projects_images/blogs-api.png');
+const Trybesmith  = require('../images/projects_images/trybesmith.png');
+const TrybersAndDragons = require('../images/projects_images/trybers-and-dragons.png');
+const TFC = require('../images/projects_images/tfc.png');
+const StoreManager = require('../images/projects_images/store-manager.png');
+const TodoList = require('../images/projects_images/todo-list.png');
+const AllForOne = require('../images/projects_images/all-for-one.png');
+const OneForAll = require('../images/projects_images/one-for-all.png');
+const TalkerManager = require('../images/projects_images/talker-manager.png');
 
-export const projectsBack = [
+export const projectsBack: ProjectTypes[] = [
   {
     title: 'Docker Todo List',
     descriptionENG: 'The project aimed to build containers using Docker for an existing application. This was achieved by creating Dockerfile files and a docker-compose file.',

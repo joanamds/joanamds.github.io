@@ -4,19 +4,20 @@ import Navbar from 'react-bootstrap/Navbar';
 import {  FaPaste, FaPhoneAlt, FaPortrait, FaTools } from 'react-icons/fa';
 import { BsMoonFill, BsSunFill } from 'react-icons/bs';
 import '../styles/Header.css';
-import { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import ThemeContext from '../context/ThemeContext';
 import { readTheme, saveTheme } from '../services/localStorage';
 import LanguageContext from '../context/LanguageContext';
-import Bra from '../images/brazil-flag-icon.svg';
-import UK from '../images/united-kingdom-flag-icon.svg';
 import { Button, Modal} from 'react-bootstrap';
 import Contact from './ContactModal';
 import Nav from 'react-bootstrap/Nav';
+import { ThemeContextType, LanguageContextType} from '../types/ContextTypes';
+const UK = require('../images/united-kingdom-flag-icon.svg').default;
+const Bra = require('../images/brazil-flag-icon.svg').default;
 
-function Header() {
-  const { isDarkTheme, setIsDarkTheme } = useContext(ThemeContext);
-  const { isEnglish, setIsEnglish } = useContext(LanguageContext);
+function Header(): JSX.Element {
+  const { isDarkTheme, setIsDarkTheme }: ThemeContextType =  useContext(ThemeContext);
+  const { isEnglish, setIsEnglish }: LanguageContextType = useContext(LanguageContext);
 
   const [isShow, invokeModal] = useState(false)
 
@@ -28,7 +29,7 @@ function Header() {
   }
 
   const toggleTheme = () => {
-    setIsDarkTheme((prevTheme) => !prevTheme); 
+    setIsDarkTheme(!isDarkTheme); 
     saveTheme(!isDarkTheme);
   }
 
@@ -96,7 +97,6 @@ function Header() {
         </Dropdown.Menu>
       </Dropdown>
         <Nav.Link 
-          variant="theme"
           onClick={ toggleTheme }
         >
           {!isDarkTheme && (

@@ -1,12 +1,13 @@
 import React, { useContext } from 'react';
 import '../styles/Home.css';
-import developer from '../images/barbie-desenvolvedora.png';
 import LanguageContext from '../context/LanguageContext';
 import '../styles/Title.scss'
+import { LanguageContextType } from '../types/ContextTypes';
+const developer = require('../images/barbie-desenvolvedora.png');
 
 function Home() {
-  const { isEnglish } = useContext(LanguageContext);
-  
+  const { isEnglish }: LanguageContextType= useContext(LanguageContext);
+
   return (
     <div className="home-page" id="home">
       <div className="home-container">

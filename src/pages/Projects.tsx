@@ -9,7 +9,7 @@ import ThemeContext from '../context/ThemeContext';
 import LanguageContext from '../context/LanguageContext';
 import '../styles/Title.scss';
 
-function Projects() {
+function Projects(): JSX.Element {
   const { isDarkTheme } = useContext(ThemeContext);
   const { isEnglish } = useContext(LanguageContext);
   const [module, setModule] = useState('fundamentals');
@@ -30,9 +30,9 @@ function Projects() {
         setProjects(personalProjects)
         break;
       default:
-        return projects;
+        setProjects([]);
     }
-  });
+  }, [module]);
 
   return (
     <div className="projects-page" id="projects">
