@@ -4,7 +4,8 @@ import {
   SiBootstrap, SiCss3, SiEslint, SiGit, SiGithub, SiHtml5,
   SiJavascript, SiJest, SiMysql, SiNodedotjs, SiReact, SiRedux,
   SiTailwindcss, SiMongodb,
-  SiTestinglibrary, SiTrello, SiTypescript, SiDocker, SiSequelize, SiJsonwebtokens, SiPython, SiMui
+  SiTestinglibrary, SiTrello, SiTypescript, SiDocker, SiSequelize, SiJsonwebtokens, SiPython, SiMui,
+  SiFlask, SiDjango
 } from "react-icons/si";
 import LanguageContext from '../context/LanguageContext';
 import '../styles/ToolsList.css';
@@ -39,6 +40,8 @@ function Tools(): JSX.Element {
     { name: 'JSON Web Tokens', icon: <SiJsonwebtokens /> },
     { name: 'MongoDB', icon: <SiMongodb /> },
     { name: 'Python', icon: <SiPython /> },
+    { name: 'Django', icon: <SiDjango /> },
+    { name: 'Flask', icon: <SiFlask /> },
   ];
 
   const toolsGroups = [];

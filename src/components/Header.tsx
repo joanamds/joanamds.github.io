@@ -73,7 +73,7 @@ function Header(): JSX.Element {
             </Modal.Footer>
           </Modal>
         <Navbar.Brand>
-          Portfolio
+          Joana
         </Navbar.Brand>
         <Nav.Link onClick={initModal}>
           <div className="icon-tooltip-container"> {/* Add this div */}
