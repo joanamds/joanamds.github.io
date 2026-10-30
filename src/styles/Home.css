@@ -53,7 +53,7 @@
 
 .button-home {
   color: black;
-  background-image: url('../images/button-color.jpg');
+  /* background-image: url('../images/button-color.jpg'); */
   font-size: 18px;
   font-weight: 700;
   margin-top: 16px;

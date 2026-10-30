@@ -1,76 +1,121 @@
 import React, { useContext, useEffect, useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
-import Dropdown from 'react-bootstrap/Dropdown';
-import '../styles/Projects.css'
+import { 
+  Box, 
+  Typography, 
+  Container, 
+  MenuItem, 
+  FormControl, 
+  Select, 
+  InputLabel,
+  SelectChangeEvent,
+  Fade
+} from '@mui/material';
 import { projectsBack } from '../data/backendProjects';
 import { projectsFront, projectsFundamentals, personalProjects } from '../data/projectsData';
 import ProjectCard from '../components/ProjectCard';
 import ThemeContext from '../context/ThemeContext';
 import LanguageContext from '../context/LanguageContext';
+import { LanguageContextType, ThemeContextType } from '../types/ContextTypes';
 import '../styles/Title.scss';
 
 function Projects(): JSX.Element {
-  const { isDarkTheme } = useContext(ThemeContext);
-  const { isEnglish } = useContext(LanguageContext);
+  const { isDarkTheme }: ThemeContextType = useContext(ThemeContext);
+  const { isEnglish }: LanguageContextType = useContext(LanguageContext);
+  
   const [module, setModule] = useState('fundamentals');
-  const [projects, setProjects] = useState([]);
+  const [projects, setProjects] = useState<any[]>([]);
 
   useEffect(() => {
-    switch (module) {
-      case 'fundamentals':
-        setProjects(projectsFundamentals)
-        break;
-      case 'frontend':
-        setProjects(projectsFront)
-        break;
-      case 'backend':
-        setProjects(projectsBack)
-        break;
-      case 'personal':
-        setProjects(personalProjects)
-        break;
-      default:
-        setProjects([]);
-    }
+    const projectData: Record<string, any[]> = {
+      fundamentals: projectsFundamentals,
+      frontend: projectsFront,
+      backend: projectsBack,
+      personal: personalProjects
+    };
+    setProjects(projectData[module] || []);
   }, [module]);
 
+  const handleChange = (event: SelectChangeEvent) => {
+    setModule(event.target.value as string);
+  };
+
+  const activeColor = isDarkTheme ? '#fff' : '#121212';
+  const redHighlight = '#ff0000';
+
   return (
-    <div className="projects-page" id="projects">
-      <div className="carousel-container">
-        <div className="typewriter">
-      <h1>{isEnglish ? 'Developed projects' : 'Projetos desenvolvidos'}</h1>
-      </div>
-      <Dropdown className="dropdown-css">
-        <Dropdown.Toggle variant={ isDarkTheme ? 'dark' : 'light' } id="dropdown-basic">
-          {isEnglish ? 'Module' : 'Módulo'}
-        </Dropdown.Toggle>
-        <Dropdown.Menu>
-          <Dropdown.Item onClick={() => setModule('fundamentals')}>
-            { isEnglish? 'Fundamentals': 'Fundamentos do Desenvolvimento Web' }
-          </Dropdown.Item>
-          <Dropdown.Item onClick={ () => setModule('frontend') } >Front End</Dropdown.Item>
-          <Dropdown.Item onClick={() => setModule('backend')}>Back End</Dropdown.Item>
-          <Dropdown.Item onClick={() => setModule('personal')}>
-            {isEnglish ? 'Personal projects' : 'Projetos pessoais'}
-          </Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
-        <Carousel interval={ null } variant={isDarkTheme ? 'light' : 'dark'}>
+    <Box 
+      id="projects" 
+      component="section"
+      sx={{ 
+        py: 10, 
+        backgroundColor: isDarkTheme ? '#121212' : '#ffffff',
+        minHeight: '100vh',
+        transition: 'background-color 0.3s ease',
+      }}
+    >
+      <Container maxWidth="lg">
+        {/* TÍTULO E SELETOR */}
+        <Box sx={{ textAlign: 'center', mb: 8 }}>
+          <div className="typewriter">
+            <Typography variant="h3" sx={{ fontWeight: 900, color: activeColor, mb: 1, fontFamily: "'Poppins', sans-serif" }}>
+              {isEnglish ? 'Developed projects' : 'Projetos desenvolvidos'}
+            </Typography>
+          </div>
+          <Box sx={{ width: 60, height: 4, bgcolor: redHighlight, mx: 'auto', mb: 5 }} />
+
+          <FormControl 
+            variant="standard" 
+            sx={{ 
+              minWidth: { xs: '100%', sm: 300 }, 
+              '& .MuiInput-underline:after': { borderBottomColor: redHighlight },
+              '& .MuiInputLabel-root.Mui-focused': { color: redHighlight }
+            }}
+          >
+            <InputLabel id="module-select-label" sx={{ color: isDarkTheme ? '#777' : '#999' }}>
+              {isEnglish ? 'Module' : 'Módulo'}
+            </InputLabel>
+            <Select
+              labelId="module-select-label"
+              value={module}
+              onChange={handleChange}
+              sx={{ color: activeColor, '& .MuiSvgIcon-root': { color: redHighlight } }}
+            >
+              <MenuItem value="fundamentals">{isEnglish ? 'Fundamentals' : 'Fundamentos'}</MenuItem>
+              <MenuItem value="frontend">Front End</MenuItem>
+              <MenuItem value="backend">Back End</MenuItem>
+              <MenuItem value="personal">{isEnglish ? 'Personal projects' : 'Projetos pessoais'}</MenuItem>
+            </Select>
+          </FormControl>
+        </Box>
+
+        {/* GRADE DOS CARDS CENTRALIZADA */}
+        <Box 
+          sx={{ 
+            display: 'grid',
+            // Aqui está a mágica: auto-fit com minmax. 
+            // Ele tenta colocar o máximo de cards que couberem de pelo menos 450px
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 550px))',
+            gap: 4,
+            justifyContent: 'center', // ISSO centraliza a grade toda se tiver só 1 item
+            alignItems: 'start'
+          }}
+        >
           {projects.map((project, index) => (
-          <Carousel.Item>
-            <ProjectCard
-              key={index}
-              projectName={project.title}
-              projectImage={project.image}
-              projectPage={project.page}
-              projectRepo={project.repo}
-              projectDescription={ isEnglish ? project.descriptionENG : project.description}
-            />
-          </Carousel.Item>
+            <Fade in={true} timeout={400 + index * 150} key={`${module}-${index}`}>
+              <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+                <ProjectCard
+                  projectName={project.title}
+                  projectImage={project.image}
+                  projectPage={project.page}
+                  projectRepo={project.repo}
+                  projectDescription={isEnglish ? project.descriptionENG : project.description}
+                />
+              </Box>
+            </Fade>
           ))}
-        </Carousel>
-      </div>
-    </div>
+        </Box>
+      </Container>
+    </Box>
   );
 }
 

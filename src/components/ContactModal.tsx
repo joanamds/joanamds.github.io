@@ -1,45 +1,95 @@
 import React, { useContext } from 'react';
-import '../styles/Contact.css';
+import { 
+  List, 
+  ListItem, 
+  ListItemIcon, 
+  ListItemText, 
+  ListItemButton, 
+  Typography, 
+  Snackbar, 
+  Alert 
+} from '@mui/material';
 import copy from 'clipboard-copy';
-import { MdEmail } from "react-icons/md";
-import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { Button } from 'react-bootstrap';
+import EmailIcon from '@mui/icons-material/Email';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageContext from '../context/LanguageContext';
 import { LanguageContextType } from '../types/ContextTypes';
+import ThemeContext from '../context/ThemeContext';
 
 function Contact(): JSX.Element {
   const { isEnglish }: LanguageContextType = useContext(LanguageContext);
+  const { isDarkTheme } = useContext(ThemeContext);
+  const [open, setOpen] = React.useState(false);
 
   const emailClick = () => {
     copy('joanamdsantos1@gmail.com');
-    alert(isEnglish ? 'Email copied on clipboard' : 'Email copiado no clipboard');
-  }
+    setOpen(true); // Em vez de alert, vamos usar um Snackbar chique do MUI
+  };
+
+  const handleClose = () => setOpen(false);
 
   return (
-    <div className="contact-page">
-      <li>
-        <MdEmail style={{ color: '#F14133' }} />
-          <Button variant="link" onClick={emailClick} className="email">
-            joanamdsantos1@gmail.com
-          </Button>
-      </li>
-      <li>
-        <FaLinkedin style={{ color: '#0078B8' }} />
-          <a href="https://www.linkedin.com/in/dev-joanamds/" target="_blank" rel="noopener noreferrer">
-            <Button className="linkedin">
-              Linkedin
-            </Button>
-          </a>
-      </li>
-      <li>
-        <FaGithub style={{ color: 'black' }} />
-        <a href="https://github.com/joanamds" target="_blank" rel="noopener noreferrer">
-          <Button variant="dark">
-            Github
-          </Button>
-        </a>
-      </li>
-    </div>
+    <>
+      <List>
+        {/* EMAIL */}
+        <ListItem disablePadding>
+          <ListItemButton onClick={emailClick}>
+            <ListItemIcon>
+              <EmailIcon sx={{ color: '#F14133' }} />
+            </ListItemIcon>
+            <ListItemText 
+              primary="joanamdsantos1@gmail.com" 
+              primaryTypographyProps={{ 
+                variant: 'body2', 
+                sx: { color: isDarkTheme ? 'white' : 'black', textDecoration: 'underline' } 
+              }} 
+            />
+          </ListItemButton>
+        </ListItem>
+
+        {/* LINKEDIN */}
+        <ListItem disablePadding>
+          <ListItemButton 
+            component="a" 
+            href="https://www.linkedin.com/in/dev-joanamds/" 
+            target="_blank"
+          >
+            <ListItemIcon>
+              <LinkedInIcon sx={{ color: '#0078B8' }} />
+            </ListItemIcon>
+            <ListItemText 
+              primary="Linkedin" 
+              primaryTypographyProps={{ sx: { color: isDarkTheme ? 'white' : 'black' } }} 
+            />
+          </ListItemButton>
+        </ListItem>
+
+        {/* GITHUB */}
+        <ListItem disablePadding>
+          <ListItemButton 
+            component="a" 
+            href="https://github.com/joanamds" 
+            target="_blank"
+          >
+            <ListItemIcon>
+              <GitHubIcon sx={{ color: isDarkTheme ? 'white' : 'black' }} />
+            </ListItemIcon>
+            <ListItemText 
+              primary="Github" 
+              primaryTypographyProps={{ sx: { color: isDarkTheme ? 'white' : 'black' } }} 
+            />
+          </ListItemButton>
+        </ListItem>
+      </List>
+
+      {/* Notificação de Copiado (Snackbar) */}
+      <Snackbar open={open} autoHideDuration={3000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success" sx={{ width: '100%' }}>
+          {isEnglish ? 'Email copied to clipboard!' : 'Email copiado para a área de transferência!'}
+        </Alert>
+      </Snackbar>
+    </>
   );
 }
 

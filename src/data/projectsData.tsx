@@ -7,6 +7,7 @@ const ZooFunctions = require('../images/projects_images/zoo-functions.png');
 const BestIndianMovies = require('../images/projects_images/best-indian-movies.png');
 const DisneyCharacters = require('../images/projects_images/disney-characters.png');
 const EscolasDeSamba = require('../images/projects_images/escolas-de-samba.png');
+const MyTunes = require('../images/projects_images/my-tunes.png');
 
 export const projectsFront: ProjectTypes[] = [
   {
@@ -18,12 +19,12 @@ export const projectsFront: ProjectTypes[] = [
     repo: 'https://github.com/joanamds/projeto-solar-system',
   },
   {
-    title: 'TrybeTunes',
+    title: 'MyTunes',
     description: 'É uma aplicação para pesquisar e listar álbuns e músicas de várias bandas e artistas. É possível ouvir uma prévia das músicas do álbum e adicionar as músicas favoritas em uma lista.',
     descriptionENG: 'This application allows users to search and browse albums and songs from various bands and artists. It features a preview option for songs in an album and the ability to create a list of favorite songs.',
-    image: Trybetunes,
-    page: 'https://joanamds.github.io/projeto-trybetunes/',
-    repo: 'https://github.com/joanamds/projeto-trybetunes',
+    image: MyTunes,
+    page: 'https://project-mytunes.vercel.app/#/',
+    repo: 'https://github.com/joanamds/project-mytunes',
   },
   {
     title: 'Online Store',

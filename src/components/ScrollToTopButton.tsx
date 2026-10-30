@@ -1,44 +1,57 @@
-import React, { useState, useEffect } from 'react';
-import Button from 'react-bootstrap/Button';
-import { FaArrowUp } from 'react-icons/fa';
+import React, { useState, useEffect, useContext } from 'react';
+import Fab from '@mui/material/Fab';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import Zoom from '@mui/material/Zoom';
+import ThemeContext from '../context/ThemeContext';
+import { ThemeContextType } from '../types/ContextTypes';
 
 function ScrollToTopButton(): JSX.Element {
   const [isVisible, setIsVisible] = useState(false);
+  const { isDarkTheme }: ThemeContextType = useContext(ThemeContext);
 
   useEffect(() => {
-    // Adicione um ouvinte de evento para detectar quando a página é rolada
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      // Remove o ouvinte de evento quando o componente é desmontado
-      window.removeEventListener('scroll', handleScroll);
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
     };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Função para verificar se o botão deve ser visível ou não
-  const handleScroll = () => {
-    if (window.scrollY > 300) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
-  // Função para rolar de volta para o topo quando o botão é clicado
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // Rolagem suave
+      behavior: 'smooth',
     });
   };
 
   return (
-    <Button
-      variant="info" // Escolha a variante de botão desejada do React Bootstrap
-      className={`scroll-top-button ${isVisible ? 'show-scroll-button' : ''}`}
-      onClick={scrollToTop}
-    >
-      <FaArrowUp className="scroll-arrow"/>
-    </Button>
+    <Zoom in={isVisible}>
+      <Fab
+        size="small"
+        aria-label="scroll back to top"
+        onClick={scrollToTop}
+        sx={{
+          position: 'fixed',
+          bottom: 32,
+          right: 32,
+          // Cores em Verde
+          backgroundColor: 'red', 
+          color: 'white',
+          '&:hover': {
+            backgroundColor: 'darkred', // Verde um pouco mais escuro no hover
+          },
+          // Opcional: borda sutil se estiver no modo dark para destacar mais
+          border: isDarkTheme ? '1px solid rgba(255,255,255,0.1)' : 'none'
+        }}
+      >
+        <KeyboardArrowUpIcon />
+      </Fab>
+    </Zoom>
   );
 }
 
